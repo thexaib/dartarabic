@@ -3,7 +3,7 @@ import 'package:string_validator/string_validator.dart';
 
 import 'constants.dart';
 
-class ArOp{
+class ArOp {
   static bool is_sukun(String arab) => arab.compareTo(Ar.SUKUN) == 0;
 
   static bool is_shadda(String arab) => arab.compareTo(Ar.SHADDA) == 0;
@@ -44,58 +44,52 @@ class ArOp{
   static String name(String archar) =>
       Ar.NAMES.containsKey(archar) ? Ar.NAMES[archar] : "";
 
-  static bool has_shadda(String word)=>word.contains(Ar.SHADDA);
+  static bool has_shadda(String word) => word.contains(Ar.SHADDA);
 
   static bool is_vocalized(String word) {
-    if(isAlpha(word)) return false;
+    if (isAlpha(word)) return false;
     word.iterable(unicode: true).forEach((ch) {
-      if(is_tashkeel(ch))
-        return false;
+      if (is_tashkeel(ch)) return false;
     });
     return true;
-
   }
 
-  static bool is_vocalizedtext(String text)=>Ar.HARAKAT_PATTERN.hasMatch(text);
+  static bool is_vocalizedtext(String text) =>
+      Ar.HARAKAT_PATTERN.hasMatch(text);
 
-
-  static String strip_harakat(String text){
-    if(is_vocalized(text))
-    {
-      String nstring=text;
+  static String strip_harakat(String text) {
+    if (is_vocalized(text)) {
+      String nstring = text;
       Ar.HARAKAT.forEach((element) {
-        nstring=nstring.replaceAll(RegExp(element,unicode: true), "");
+        nstring = nstring.replaceAll(RegExp(element, unicode: true), "");
       });
       return nstring;
-
     }
     return text;
   }
-  static String strip_tashkeel(String text){
-    if(is_vocalized(text))
-    {
-      String nstring=text;
+
+  static String strip_tashkeel(String text) {
+    if (is_vocalized(text)) {
+      String nstring = text;
       Ar.TASHKEEL.forEach((element) {
-        nstring=nstring.replaceAll(RegExp(element,unicode: true), "");
+        nstring = nstring.replaceAll(RegExp(element, unicode: true), "");
       });
       return nstring;
-
     }
     return text;
   }
 
-  static String strip_diacritics(String text){
-    if(is_vocalized(text))
-    {
-      String nstring=text;
+  static String strip_diacritics(String text) {
+    if (is_vocalized(text)) {
+      String nstring = text;
       Ar.DIACRITICS.forEach((element) {
-        nstring=nstring.replaceAll(RegExp(element,unicode: true), "");
+        nstring = nstring.replaceAll(RegExp(element, unicode: true), "");
       });
       return nstring;
-
     }
     return text;
   }
 
-
+  static String strip_tatweel(String text) =>
+      text.replaceAll(RegExp(Ar.TATWEEL, unicode: true), "");
 }

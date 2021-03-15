@@ -3,7 +3,8 @@ library dartarabic;
 import 'package:dartarabic/operations.dart';
 
 abstract class DartArabic {
-  static String removeHarakat(String text) => ArOp.strip_harakat(text);
-  static String removeTashkeel(String text) => ArOp.strip_tashkeel(text);
-  static String removeDiacritics(String text) => ArOp.strip_diacritics(text);
+  static String stripHarakat(String text) => ArOp.strip_harakat(text);
+  static String stripTashkeel(String text) => ArOp.strip_tashkeel(text);
+  static String stripDiacritics(String text) => ArOp.strip_diacritics(text);
+  static String stripTatweel(String text) => ArOp.strip_tatweel(text);
 }
