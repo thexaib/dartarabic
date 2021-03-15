@@ -3,25 +3,22 @@ import 'package:dartarabic/dartarabic.dart';
 
 void main() {
   test('Remove Harakat', () {
-    final parser = DartArabic();
     String test = "الْعَرَبِيَّةُ";
     String fixture = "العربيّة";
-    expect(parser.removeHarakat(test), fixture);
-    expect(parser.removeHarakat(test), isNot(equals(test)));
+    expect(DartArabic.removeHarakat(test), fixture);
+    expect(DartArabic.removeHarakat(test), isNot(equals(test)));
   });
   test('Remove Tashkeel', () {
-    final parser = DartArabic();
     String test = "الْعَرَبِيَّةُ";
     String fixture = "العربية";
-    expect(parser.removeTashkeel(test), fixture);
-    expect(parser.removeTashkeel(test), isNot(equals(test)));
+    expect(DartArabic.removeTashkeel(test), fixture);
+    expect(DartArabic.removeTashkeel(test), isNot(equals(test)));
   });
   test('Remove Diacritic', () {
-    final parser = DartArabic();
     String test = "الْعَرَبِيَّةُ";
     String fixture = "العربية";
-    expect(parser.removeDiacritics(test), fixture);
-    expect(parser.removeDiacritics(test), isNot(equals(test)));
+    expect(DartArabic.removeDiacritics(test), fixture);
+    expect(DartArabic.removeDiacritics(test), isNot(equals(test)));
   });
 
 
