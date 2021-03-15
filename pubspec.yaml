@@ -1,6 +1,6 @@
 name: dartarabic
 description: Parsing Arabic text
-version: 0.0.1
+version: 0.0.1-dev1
 homepage: https://github.com/thexaib/dartarabic
 
 environment:
