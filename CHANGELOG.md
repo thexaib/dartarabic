@@ -4,3 +4,4 @@
     - stripTashkeel
     - stripDiacritics
     - stripTatweel
+    - stripShadda
