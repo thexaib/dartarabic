@@ -10,4 +10,5 @@ abstract class DartArabic {
   static String stripShadda(String text) => ArOp.strip_shadda(text);
   static String normalizeLigature(String text) => ArOp.normalize_ligature(text);
   static String normalizeHamza(String text,{String method=ArOp.METHOD_UNIFORM}) => ArOp.normalize_hamza(text,method: method);
+  static String normalizeAlef(String text) => ArOp.normalize_alef(text);
 }

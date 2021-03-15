@@ -136,4 +136,13 @@ class ArOp {
     }
     return nstring;
   }
+
+  static String normalize_alef(String text){
+    String nstring = text;
+    nstring=nstring.replaceAll(RegExp(Ar.SMALL_ALEF+Ar.ALEF_MAKSURA), Ar.ALEF_MAKSURA);
+    nstring=nstring.replaceAll(RegExp(Ar.ALEF_MAKSURA+Ar.SMALL_ALEF), Ar.ALEF_MAKSURA);
+    nstring=nstring.replaceAll(Ar.ALEFAT_PATTERN, Ar.ALEF);
+    return nstring;
+  }
+
 }

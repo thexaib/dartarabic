@@ -58,6 +58,13 @@ void main() {
     expect(DartArabic.normalizeHamza(test,method: ArOp.METHOD_TASHEEL), isNot(equals(test)));
   });
 
+  test('Normalize Alef', () {
+    String test = "بِٱلْهُدَىٰ";
+    String truth = "بِالْهُدَا";
+    expect(DartArabic.normalizeAlef(test), truth);
+    expect(DartArabic.normalizeAlef(test), isNot(equals(test)));
+  });
+
 
 
 }

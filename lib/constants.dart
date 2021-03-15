@@ -1,5 +1,3 @@
-import 'package:dartarabic/extensions.dart';
-import 'package:string_validator/string_validator.dart';
 import 'package:unicode_data/unicode_data.dart';
 
 class Ar {
@@ -405,4 +403,5 @@ class Ar {
   
   static final LIGUATURES_PATTERN=  RegExp(r"["+LIGUATURES.join()+r"]",unicode: true);
   static final HAMZAT_PATTERN=  RegExp(r"["+HAMZAT.join()+r"]",unicode: true);
+  static final ALEFAT_PATTERN=  RegExp(r"["+ALEFAT.join()+r"]",unicode: true);
 }
