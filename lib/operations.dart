@@ -92,8 +92,10 @@ class ArOp {
 
   static String strip_tatweel(String text) =>
       text.replaceAll(RegExp(Ar.TATWEEL, unicode: true), "");
+
   static String strip_shadda(String text) =>
       text.replaceAll(RegExp(Ar.SHADDA, unicode: true), "");
 
+  static String normalize_ligature(String text)=>text.replaceAll(Ar.LIGUATURES_PATTERN, "${Ar.LAM}${Ar.ALEF}");
 
 }

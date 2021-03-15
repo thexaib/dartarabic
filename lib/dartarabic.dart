@@ -8,4 +8,5 @@ abstract class DartArabic {
   static String stripDiacritics(String text) => ArOp.strip_diacritics(text);
   static String stripTatweel(String text) => ArOp.strip_tatweel(text);
   static String stripShadda(String text) => ArOp.strip_shadda(text);
+  static String normalizeLigature(String text) => ArOp.normalize_ligature(text);
 }

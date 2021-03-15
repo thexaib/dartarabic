@@ -33,4 +33,15 @@ void main() {
     expect(DartArabic.stripShadda(test), truth);
     expect(DartArabic.stripShadda(test), isNot(equals(test)));
   });
+
+
+  test('Normalize Ligature', () {
+    String test = "ﻻنحالي ﻷﻹﻵ";
+    String truth = "لانحالي لالالا";
+    DartArabic.normalizeLigature(test);
+    expect(DartArabic.normalizeLigature(test), truth);
+    expect(DartArabic.normalizeLigature(test), isNot(equals(test)));
+  });
+
+
 }

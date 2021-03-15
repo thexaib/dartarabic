@@ -402,4 +402,6 @@ class Ar {
 
   static final HARAKAT_PATTERN =
       RegExp(r'[' + HARAKAT.join() + r']', unicode: true);
+  
+  static final LIGUATURES_PATTERN=  RegExp(r"["+LIGUATURES.join()+r"]",unicode: true);
 }

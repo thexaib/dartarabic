@@ -5,3 +5,4 @@
     - stripDiacritics
     - stripTatweel
     - stripShadda
+    - normalizeLigature
