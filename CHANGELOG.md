@@ -6,3 +6,4 @@
     - stripTatweel
     - stripShadda
     - normalizeLigature
+    - normalizeHamza

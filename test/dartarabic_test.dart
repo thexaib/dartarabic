@@ -1,3 +1,4 @@
+import 'package:dartarabic/operations.dart';
 import 'package:test/test.dart';
 import 'package:dartarabic/dartarabic.dart';
 
@@ -42,6 +43,21 @@ void main() {
     expect(DartArabic.normalizeLigature(test), truth);
     expect(DartArabic.normalizeLigature(test), isNot(equals(test)));
   });
+
+  test('Normalize Hamza UNIFORM', () {
+    String test = "جاء سؤال الأئمة عن الإسلام آجلا";
+    String truth = "جاء سءال الءءمة عن الءسلام ءءجلا";
+    expect(DartArabic.normalizeHamza(test), truth);
+    expect(DartArabic.normalizeHamza(test), isNot(equals(test)));
+  });
+
+  test('Normalize Hamza Tasheel', () {
+    String test = "جاء سؤال الأئمة عن الإسلام آجلا";
+    String truth = "جاء سوال الايمة عن الاسلام اجلا";
+    expect(DartArabic.normalizeHamza(test,method: ArOp.METHOD_TASHEEL), truth);
+    expect(DartArabic.normalizeHamza(test,method: ArOp.METHOD_TASHEEL), isNot(equals(test)));
+  });
+
 
 
 }

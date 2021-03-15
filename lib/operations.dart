@@ -4,6 +4,9 @@ import 'package:string_validator/string_validator.dart';
 import 'constants.dart';
 
 class ArOp {
+  static const String METHOD_UNIFORM = "uniform";
+  static const String METHOD_TASHEEL = "tasheel";
+
   static bool is_sukun(String arab) => arab.compareTo(Ar.SUKUN) == 0;
 
   static bool is_shadda(String arab) => arab.compareTo(Ar.SHADDA) == 0;
@@ -96,6 +99,41 @@ class ArOp {
   static String strip_shadda(String text) =>
       text.replaceAll(RegExp(Ar.SHADDA, unicode: true), "");
 
-  static String normalize_ligature(String text)=>text.replaceAll(Ar.LIGUATURES_PATTERN, "${Ar.LAM}${Ar.ALEF}");
+  static String normalize_ligature(String text) =>
+      text.replaceAll(Ar.LIGUATURES_PATTERN, "${Ar.LAM}${Ar.ALEF}");
 
+  static String normalize_hamza(String text,
+      {String method = ArOp.METHOD_UNIFORM}) {
+    String nstring = text;
+    if (method == ArOp.METHOD_TASHEEL) {
+//       Alefat to Alef
+      nstring = nstring.replaceAll(RegExp(Ar.ALEF_MADDA), Ar.ALEF);
+      nstring = nstring.replaceAll(RegExp(Ar.ALEF_HAMZA_ABOVE), Ar.ALEF);
+      nstring = nstring.replaceAll(RegExp(Ar.ALEF_HAMZA_BELOW), Ar.ALEF);
+      nstring = nstring.replaceAll(RegExp(Ar.HAMZA_ABOVE), Ar.ALEF);
+      nstring = nstring.replaceAll(RegExp(Ar.HAMZA_BELOW), Ar.ALEF);
+//       on Waw
+      nstring = nstring.replaceAll(RegExp(Ar.WAW_HAMZA), Ar.WAW);
+//       on Yeh
+      nstring = nstring.replaceAll(RegExp(Ar.YEH_HAMZA), Ar.YEH);
+    } else {
+      List<String> parts = nstring.split(" ");
+      for (var i = 0; i < parts.length; i++) {
+        var part = parts[i];
+        if (part.startsWith(RegExp(Ar.ALEF_MADDA))) {
+          if(part.length>=3 && Ar.HARAKAT.contains(part[1])==false && (part[2]==Ar.SHADDA || part.length==3)){
+            part="${Ar.HAMZA}${Ar.ALEF}${part.substring(1)}";
+          }else{
+            part="${Ar.HAMZA}${Ar.HAMZA}${part.substring(1)}";
+          }
+        }
+        part= part.replaceAll(RegExp(Ar.ALEF_MADDA ), "${Ar.HAMZA}${Ar.HAMZA}");
+        part=part.replaceAll(Ar.HAMZAT_PATTERN, Ar.HAMZA);
+
+        parts[i]= part;
+      }
+      nstring=parts.join(" ");
+    }
+    return nstring;
+  }
 }
