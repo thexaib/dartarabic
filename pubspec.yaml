@@ -1,15 +1,14 @@
 name: dartarabic
 description: Parsing Arabic text
 version: 0.0.1
-author: theXaib
-homepage:
+homepage: https://github.com/thexaib/dartarabic
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  string_validator: 0.1.4
-  characters: ^1.1.0-nullsafety.5
+  string_validator: ^0.1.4
+  characters: ^1.1.0
   unicode_data: ^0.1.1
 
 dev_dependencies:
