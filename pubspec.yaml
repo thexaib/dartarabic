@@ -1,6 +1,6 @@
 name: dartarabic
-description: Parsing Arabic text
-version: 0.0.1-dev2
+description: Parsing Arabic text. A specific Arabic language library ported to dart from Python, provides basic functions to manipulate Arabic letters and text remove diacritics, normalize ligature etc.
+version: 0.0.1-dev3
 homepage: https://github.com/thexaib/dartarabic
 
 environment:
@@ -13,3 +13,4 @@ dependencies:
 
 dev_dependencies:
   test: ^1.16.4
+  isolate: ^2.0.3

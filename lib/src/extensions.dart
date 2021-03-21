@@ -1,8 +1,6 @@
-
 import 'package:characters/characters.dart';
 
 extension XStringIterator on String {
-
   /// To iterate a [String]: `"Hello".iterable()`
   /// This will use simple characters. If you want to use Unicode Grapheme
   /// from the [Characters] library, passa [chars] true.
@@ -12,9 +10,10 @@ extension XStringIterator on String {
       while (iterator.moveNext()) {
         yield iterator.current;
       }
-    } else
+    } else {
       for (var i = 0; i < length; i++) {
         yield this[i];
       }
+    }
   }
 }

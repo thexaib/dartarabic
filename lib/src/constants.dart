@@ -393,15 +393,18 @@ class Ar {
   static final DIACRITICS = DIACRITICS_RANGE.where((element) {
     final found = UnicodeScript.scripts
         .where((script) => element >= script.start && element <= script.end);
-    if(found.isEmpty)return false;
+    if (found.isEmpty) return false;
     final script = found.single;
     return script.category == "Mn";
   }).map((e) => String.fromCharCode(e));
 
   static final HARAKAT_PATTERN =
       RegExp(r'[' + HARAKAT.join() + r']', unicode: true);
-  
-  static final LIGUATURES_PATTERN=  RegExp(r"["+LIGUATURES.join()+r"]",unicode: true);
-  static final HAMZAT_PATTERN=  RegExp(r"["+HAMZAT.join()+r"]",unicode: true);
-  static final ALEFAT_PATTERN=  RegExp(r"["+ALEFAT.join()+r"]",unicode: true);
+
+  static final LIGUATURES_PATTERN =
+      RegExp(r"[" + LIGUATURES.join() + r"]", unicode: true);
+  static final HAMZAT_PATTERN =
+      RegExp(r"[" + HAMZAT.join() + r"]", unicode: true);
+  static final ALEFAT_PATTERN =
+      RegExp(r"[" + ALEFAT.join() + r"]", unicode: true);
 }

@@ -1,6 +1,5 @@
-import 'package:dartarabic/operations.dart';
 import 'package:test/test.dart';
-import 'package:dartarabic/dartarabic.dart';
+import 'package:dartarabic/src/dartarabic.dart';
 
 void main() {
   test('Strip Harakat', () {
@@ -47,15 +46,15 @@ void main() {
   test('Normalize Hamza UNIFORM', () {
     String test = "جاء سؤال الأئمة عن الإسلام آجلا";
     String truth = "جاء سءال الءءمة عن الءسلام ءءجلا";
-    expect(DartArabic.normalizeHamza(test), truth);
-    expect(DartArabic.normalizeHamza(test), isNot(equals(test)));
+    expect(DartArabic.normalizeHamzaUniform(test), truth);
+    expect(DartArabic.normalizeHamzaUniform(test), isNot(equals(test)));
   });
 
   test('Normalize Hamza Tasheel', () {
     String test = "جاء سؤال الأئمة عن الإسلام آجلا";
     String truth = "جاء سوال الايمة عن الاسلام اجلا";
-    expect(DartArabic.normalizeHamza(test,method: ArOp.METHOD_TASHEEL), truth);
-    expect(DartArabic.normalizeHamza(test,method: ArOp.METHOD_TASHEEL), isNot(equals(test)));
+    expect(DartArabic.normalizeHamzaTasheel(test), truth);
+    expect(DartArabic.normalizeHamzaTasheel(test), isNot(equals(test)));
   });
 
   test('Normalize Alef', () {

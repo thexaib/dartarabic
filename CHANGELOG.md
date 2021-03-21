@@ -1,3 +1,6 @@
+## [0.0.1-dev3]
+- Example usage added.
+- [Breaking] normalizeHamza changed to two normalizeHamzaUniform and normalizeHamzaTasheel methods.
 ## [0.0.1-dev2]
 - Added normalizeAlef
 ## [0.0.1-dev1]

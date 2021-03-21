@@ -1,4 +1,4 @@
-import 'package:dartarabic/extensions.dart';
+import 'package:dartarabic/src/extensions.dart';
 import 'package:string_validator/string_validator.dart';
 
 import 'constants.dart';
