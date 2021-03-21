@@ -121,28 +121,31 @@ class ArOp {
       for (var i = 0; i < parts.length; i++) {
         var part = parts[i];
         if (part.startsWith(RegExp(Ar.ALEF_MADDA))) {
-          if(part.length>=3 && Ar.HARAKAT.contains(part[1])==false && (part[2]==Ar.SHADDA || part.length==3)){
-            part="${Ar.HAMZA}${Ar.ALEF}${part.substring(1)}";
-          }else{
-            part="${Ar.HAMZA}${Ar.HAMZA}${part.substring(1)}";
+          if (part.length >= 3 &&
+              Ar.HARAKAT.contains(part[1]) == false &&
+              (part[2] == Ar.SHADDA || part.length == 3)) {
+            part = "${Ar.HAMZA}${Ar.ALEF}${part.substring(1)}";
+          } else {
+            part = "${Ar.HAMZA}${Ar.HAMZA}${part.substring(1)}";
           }
         }
-        part= part.replaceAll(RegExp(Ar.ALEF_MADDA ), "${Ar.HAMZA}${Ar.HAMZA}");
-        part=part.replaceAll(Ar.HAMZAT_PATTERN, Ar.HAMZA);
+        part = part.replaceAll(RegExp(Ar.ALEF_MADDA), "${Ar.HAMZA}${Ar.HAMZA}");
+        part = part.replaceAll(Ar.HAMZAT_PATTERN, Ar.HAMZA);
 
-        parts[i]= part;
+        parts[i] = part;
       }
-      nstring=parts.join(" ");
+      nstring = parts.join(" ");
     }
     return nstring;
   }
 
-  static String normalize_alef(String text){
+  static String normalize_alef(String text) {
     String nstring = text;
-    nstring=nstring.replaceAll(RegExp(Ar.SMALL_ALEF+Ar.ALEF_MAKSURA), Ar.ALEF_MAKSURA);
-    nstring=nstring.replaceAll(RegExp(Ar.ALEF_MAKSURA+Ar.SMALL_ALEF), Ar.ALEF_MAKSURA);
-    nstring=nstring.replaceAll(Ar.ALEFAT_PATTERN, Ar.ALEF);
+    nstring = nstring.replaceAll(
+        RegExp(Ar.SMALL_ALEF + Ar.ALEF_MAKSURA), Ar.ALEF_MAKSURA);
+    nstring = nstring.replaceAll(
+        RegExp(Ar.ALEF_MAKSURA + Ar.SMALL_ALEF), Ar.ALEF_MAKSURA);
+    nstring = nstring.replaceAll(Ar.ALEFAT_PATTERN, Ar.ALEF);
     return nstring;
   }
-
 }

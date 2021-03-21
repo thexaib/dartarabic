@@ -1,3 +1,5 @@
+## [0.0.1-dev4]
+- code formatted
 ## [0.0.1-dev3]
 - Example usage added.
 - [Breaking] normalizeHamza changed to two normalizeHamzaUniform and normalizeHamzaTasheel methods.

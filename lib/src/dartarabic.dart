@@ -1,11 +1,10 @@
-
 import 'operations.dart';
 
 abstract class DartArabic {
   /// Strip Harakat from [text] arabic word except Shadda. The striped marks are : FATHA, DAMMA, KASRA, SUKUN, FATHATAN, DAMMATAN, KASRATAN.
   static String stripHarakat(String text) => ArOp.strip_harakat(text);
 
- /// Strip vowels from [text], include Shadda. The striped marks are : FATHA, DAMMA, KASRA, SUKUN, SHADDA, FATHATAN, DAMMATAN, KASRATAN
+  /// Strip vowels from [text], include Shadda. The striped marks are : FATHA, DAMMA, KASRA, SUKUN, SHADDA, FATHATAN, DAMMATAN, KASRATAN
   static String stripTashkeel(String text) => ArOp.strip_tashkeel(text);
 
   /// Strip arabic diacritics from [text]. The striped marks are : Small Alef, Harakat + Shadda, Quranic marks, Extended arabic diacritics
@@ -21,10 +20,12 @@ abstract class DartArabic {
   static String normalizeLigature(String text) => ArOp.normalize_ligature(text);
 
   /// Standardize the Hamzat into one form of hamza (uniform method), replace Madda by hamza and alef. Replace the LamAlefs by simplified letters.
-  static String normalizeHamzaUniform(String text) => ArOp.normalize_hamza(text,method:ArOp.METHOD_UNIFORM);
+  static String normalizeHamzaUniform(String text) =>
+      ArOp.normalize_hamza(text, method: ArOp.METHOD_UNIFORM);
 
   /// Standardize the Hamzat into one form of hamza (Tasheel method), replace Madda by hamza and alef. Replace the LamAlefs by simplified letters.
-  static String normalizeHamzaTasheel(String text) => ArOp.normalize_hamza(text,method: ArOp.METHOD_TASHEEL);
+  static String normalizeHamzaTasheel(String text) =>
+      ArOp.normalize_hamza(text, method: ArOp.METHOD_TASHEEL);
 
   /// converts all alefs to ALEF_MAMDODA with the exception of Alef maksura
   static String normalizeAlef(String text) => ArOp.normalize_alef(text);
