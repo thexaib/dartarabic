@@ -15,7 +15,7 @@ Import `'package:dartarabic/dartarabic.dart'` and access the static methods in `
 - [normalizeLigature](#normalizeLigature)
 - [normalizeHamzaUniform](#normalizeHamzaUniform)
 - [normalizeHamzaTasheel](#normalizeHamzaTasheel)
-- [normalizeHamzaTasheel](#normalizeHamzaTasheel)
+- [normalizeAlef](#normalizeAlef)
 
 #### stripHarakat
 Strip Harakat from arabic word except Shadda.
