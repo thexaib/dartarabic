@@ -1,7 +1,7 @@
 import 'operations.dart';
 
 abstract class DartArabic {
-  /// Strip Harakat from [text] arabic word except Shadda. The striped marks are : FATHA, DAMMA, KASRA, SUKUN, FATHATAN, DAMMATAN, KASRATAN.
+  /// Strip Harakat from [text] arabic word except Shadda. The striped marks are : FATHA, DAMMA, KASRA,  FATHATAN, DAMMATAN, KASRATAN,SUKUN Marks,
   static String stripHarakat(String text) => ArOp.strip_harakat(text);
 
   /// Strip vowels from [text], include Shadda. The striped marks are : FATHA, DAMMA, KASRA, SUKUN, SHADDA, FATHATAN, DAMMATAN, KASRATAN

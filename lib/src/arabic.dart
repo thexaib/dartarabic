@@ -246,7 +246,7 @@ class Arabic {
     FATHA,
     DAMMA,
     KASRA,
-    SUKUN
+    ...SUKUN_MARKS,
   ];
 
   static const SHORTHARAKAT = [FATHA, DAMMA, KASRA, SUKUN];
