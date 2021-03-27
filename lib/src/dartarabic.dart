@@ -29,4 +29,7 @@ abstract class DartArabic {
 
   /// converts all alefs to ALEF_MAMDODA with the exception of Alef maksura
   static String normalizeAlef(String text) => ArOp.normalize_alef(text);
+
+  /// converts non standard letter characters to single letters. e.g HEH_START ﻫ is converted to ه
+  static String normalizeLetters(String text) => ArOp.normalize_letters(text);
 }

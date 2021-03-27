@@ -1,3 +1,5 @@
+## [0.0.1-dev6]
+- Added normalizeLetters
 ## [0.0.1-dev5]
 - `stripHarakat` now also removes SKUN_Curvy and Sukun Rounded marks
 - Arabic class available containing Arabic Letters and numbers

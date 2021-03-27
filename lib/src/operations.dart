@@ -41,8 +41,9 @@ class ArOp {
 
   static bool is_sun(String arab) => Arabic.SUN.contains(arab);
 
-  static int order(String archar) =>
-      Arabic.ALPHABETIC_ORDER.containsKey(archar) ? Arabic.ALPHABETIC_ORDER[archar] : 0;
+  static int order(String archar) => Arabic.ALPHABETIC_ORDER.containsKey(archar)
+      ? Arabic.ALPHABETIC_ORDER[archar]
+      : 0;
 
   static String name(String archar) =>
       Arabic.NAMES.containsKey(archar) ? Arabic.NAMES[archar] : "";
@@ -102,14 +103,24 @@ class ArOp {
   static String normalize_ligature(String text) =>
       text.replaceAll(Arabic.LIGUATURES_PATTERN, "${Arabic.LAM}${Arabic.ALEF}");
 
+  static String normalize_letters(String text) {
+    String nstring = text;
+    Arabic.LETTERS_NORM_MAP_REG.forEach((key, value) {
+      nstring = nstring.replaceAll(key, value);
+    });
+    return nstring;
+  }
+
   static String normalize_hamza(String text,
       {String method = ArOp.METHOD_UNIFORM}) {
     String nstring = text;
     if (method == ArOp.METHOD_TASHEEL) {
 //       Alefat to Alef
       nstring = nstring.replaceAll(RegExp(Arabic.ALEF_MADDA), Arabic.ALEF);
-      nstring = nstring.replaceAll(RegExp(Arabic.ALEF_HAMZA_ABOVE), Arabic.ALEF);
-      nstring = nstring.replaceAll(RegExp(Arabic.ALEF_HAMZA_BELOW), Arabic.ALEF);
+      nstring =
+          nstring.replaceAll(RegExp(Arabic.ALEF_HAMZA_ABOVE), Arabic.ALEF);
+      nstring =
+          nstring.replaceAll(RegExp(Arabic.ALEF_HAMZA_BELOW), Arabic.ALEF);
       nstring = nstring.replaceAll(RegExp(Arabic.HAMZA_ABOVE), Arabic.ALEF);
       nstring = nstring.replaceAll(RegExp(Arabic.HAMZA_BELOW), Arabic.ALEF);
 //       on Waw
@@ -129,7 +140,8 @@ class ArOp {
             part = "${Arabic.HAMZA}${Arabic.HAMZA}${part.substring(1)}";
           }
         }
-        part = part.replaceAll(RegExp(Arabic.ALEF_MADDA), "${Arabic.HAMZA}${Arabic.HAMZA}");
+        part = part.replaceAll(
+            RegExp(Arabic.ALEF_MADDA), "${Arabic.HAMZA}${Arabic.HAMZA}");
         part = part.replaceAll(Arabic.HAMZAT_PATTERN, Arabic.HAMZA);
 
         parts[i] = part;

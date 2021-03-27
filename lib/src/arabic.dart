@@ -1,5 +1,6 @@
 import 'package:unicode_data/unicode_data.dart';
 
+/// Class defining Arabic letters,characters and marks
 class Arabic {
   static const COMMA = '\u060C';
 
@@ -123,6 +124,145 @@ class Arabic {
 
   static const BYTE_ORDER_MARK = '\ufeff';
 
+  //Letter variants
+  static const ALEF_ISOLATED = '\uFE8D';
+  static const ALEF_END = '\uFE8E';
+
+  static const BEH_ISOLATED = '\uFE8D';
+  static const BEH_END = '\uFE90';
+  static const BEH_START = '\uFE91';
+  static const BEH_MID = '\uFE92';
+
+  static const TEH_ISOLATED = '\uFE95';
+  static const TEH_END = '\uFE96';
+  static const TEH_START = '\uFE97';
+  static const TEH_MID = '\uFE98';
+
+  static const THEH_ISOLATED = '\uFE99';
+  static const THEH_END = '\uFE9A';
+  static const THEH_START = '\uFE9B';
+  static const THEH_MID = '\uFE9C';
+
+  static const JEEM_ISOLATED = '\uFE9D';
+  static const JEEM_END = '\uFE9E';
+  static const JEEM_START = '\uFE9F';
+  static const JEEM_MID = '\uFEA0';
+
+  static const HAH_ISOLATED = '\uFEA1';
+  static const HAH_END = '\uFEA2';
+  static const HAH_START = '\uFEA3';
+  static const HAH_MID = '\uFEA4';
+
+  static const KHAH_ISOLATED = '\uFEA5';
+  static const KHAH_END = '\uFEA6';
+  static const KHAH_START = '\uFEA7';
+  static const KHAH_MID = '\uFEA8';
+
+  static const DAL_ISOLATED = '\uFEA9';
+  static const DAL_END = '\uFEAA';
+
+  static const THAL_ISOLATED = '\uFEAB';
+  static const THAL_END = '\uFEAC';
+
+  static const REH_ISOLATED = '\uFEAD';
+  static const REH_END = '\uFEAE';
+
+  static const ZAIN_ISOLATED = '\uFEAF';
+  static const ZAIN_END = '\uFEB0';
+
+  static const SEEN_ISOLATED = '\uFEB1';
+  static const SEEN_END = '\uFEB2';
+  static const SEEN_START = '\uFEB3';
+  static const SEEN_MID = '\uFEB4';
+
+  static const SHEEN_ISOLATED = '\uFEB5';
+  static const SHEEN_END = '\uFEB6';
+  static const SHEEN_START = '\uFEB7';
+  static const SHEEN_MID = '\uFEB8';
+
+  static const SAD_ISOLATED = '\uFEB9';
+  static const SAD_END = '\uFEBA';
+  static const SAD_START = '\uFEBB';
+  static const SAD_MID = '\uFEBC';
+
+  static const DAD_ISOLATED = '\uFEBD';
+  static const DAD_END = '\uFEBE';
+  static const DAD_START = '\uFEBF';
+  static const DAD_MID = '\uFEC0';
+
+  static const TAH_ISOLATED = '\uFEC1';
+  static const TAH_END = '\uFEC2';
+  static const TAH_START = '\uFEC3';
+  static const TAH_MID = '\uFEC4';
+
+  static const ZAH_ISOLATED = '\uFEC5';
+  static const ZAH_END = '\uFEC6';
+  static const ZAH_START = '\uFEC7';
+  static const ZAH_MID = '\uFEC8';
+
+
+  static const AIN_ISOLATED = '\uFEC9';
+  static const AIN_END = '\uFECA';
+  static const AIN_START = '\uFECB';
+  static const AIN_MID = '\uFECC';
+
+  static const GHAIN_ISOLATED = '\uFECD';
+  static const GHAIN_END = '\uFECE';
+  static const GHAIN_START = '\uFECF';
+  static const GHAIN_MID = '\uFED0';
+
+  static const FEH_ISOLATED = '\uFED1';
+  static const FEH_END = '\uFED2';
+  static const FEH_START = '\uFED3';
+  static const FEH_MID = '\uFED4';
+
+  static const QAF_ISOLATED = '\uFED5';
+  static const QAF_END = '\uFED6';
+  static const QAF_START = '\uFED7';
+  static const QAF_MID = '\uFED8';
+
+  static const KAF_ISOLATED = '\uFED9';
+  static const KAF_END = '\uFEDA';
+  static const KAF_START = '\uFEDB';
+  static const KAF_MID = '\uFEDC';
+
+  static const LAM_ISOLATED = '\uFEDD';
+  static const LAM_END = '\uFEDE';
+  static const LAM_START = '\uFEDF';
+  static const LAM_MID = '\uFEE0';
+
+  static const MEEM_ISOLATED = '\uFEE1';
+  static const MEEM_END = '\uFEE2';
+  static const MEEM_START = '\uFEE3';
+  static const MEEM_MID = '\uFEE4';
+
+  static const NOON_ISOLATED = '\uFEE5';
+  static const NOON_END = '\uFEE6';
+  static const NOON_START = '\uFEE7';
+  static const NOON_MID = '\uFEE8';
+
+  static const HEH_ISOLATED = '\uFEE9';
+  static const HEH_END = '\uFEEA';
+  static const HEH_START = '\uFEEB';
+  static const HEH_MID = '\uFEEC';
+
+  static const WAW_ISOLATED = '\uFEED';
+  static const WAW_END = '\uFEEE';
+
+  static const YEH_ISOLATED = '\uFEF1';
+  static const YEH_END = '\uFEF2';
+  static const YEH_MID = '\uFEF4';
+  static const YEH_START = '\uFEF3';
+
+  static const ALEF_MADDA_ISOLATED = '\uFE81';
+  static const ALEF_MADDA_END = '\uFE82';
+
+  static const TEH_MARBUTA_ISOLATED = '\uFE93';
+  static const TEH_MARBUTA_END = '\uFE94';
+
+  static const ALEF_MAKSURA_ISOLATED = '\uFEEF';
+  static const ALEF_MAKSURA_END = '\uFEF0';
+
   //other variations
   static const KAF_INDOPAK = '\u06a9';
   static const MEEM_LOW = '\u06ed';
@@ -190,6 +330,43 @@ class Arabic {
   static const SIMPLE_LAM_ALEF_MADDA_ABOVE = '\u0644\u0622';
 
 //  # groups
+  static const Map<List<String>, String> LETTERS_NORM_MAP = {
+    [ALEF_ISOLATED, ALEF_END]: ALEF,
+    [BEH_ISOLATED, BEH_START, BEH_MID, BEH_END]: BEH,
+    [TEH_ISOLATED, TEH_START, TEH_MID, TEH_END]: TEH,
+    [THEH_ISOLATED, THEH_START, THEH_MID, THEH_END]: THEH,
+    [JEEM_ISOLATED, JEEM_START, JEEM_MID, JEEM_END]: JEEM,
+    [HAH_ISOLATED, HAH_START, HAH_MID, HAH_END]: HAH,
+    [KHAH_ISOLATED, KHAH_START, KHAH_MID, KHAH_END]: KHAH,
+    [DAL_ISOLATED,  DAL_END]: DAL,
+    [THAL_ISOLATED,  THAL_END]: THAL,
+    [REH_ISOLATED,  REH_END]: REH,
+    [ZAIN_ISOLATED,  ZAIN_END]: ZAIN,
+    [SEEN_ISOLATED, SEEN_START, SEEN_MID, SEEN_END]: SEEN,
+    [SHEEN_ISOLATED, SHEEN_START, SHEEN_MID, SHEEN_END]: SHEEN,
+    [SAD_ISOLATED, SAD_START, SAD_MID, SAD_END]: SAD,
+    [DAD_ISOLATED, DAD_START, DAD_MID, DAD_END]: DAD,
+    [TAH_ISOLATED, TAH_START, TAH_MID, TAH_END]: TAH,
+    [ZAH_ISOLATED, ZAH_START, ZAH_MID, ZAH_END]: ZAH,
+    [AIN_ISOLATED, AIN_START, AIN_MID, AIN_END]: AIN,
+    [GHAIN_ISOLATED, GHAIN_START, GHAIN_MID, GHAIN_END]: GHAIN,
+    [FEH_ISOLATED, FEH_START, FEH_MID, FEH_END]: FEH,
+    [QAF_ISOLATED, QAF_START, QAF_MID, QAF_END]: QAF,
+    [KAF_ISOLATED, KAF_START, KAF_MID, KAF_END]: KAF,
+    [LAM_ISOLATED, LAM_START, LAM_MID, LAM_END]: LAM,
+    [MEEM_ISOLATED, MEEM_START, MEEM_MID, MEEM_END]: MEEM,
+    [NOON_ISOLATED, NOON_START, NOON_MID, NOON_END]: NOON,
+    [HEH_ISOLATED, HEH_START, HEH_MID, HEH_END]: HEH,
+    [WAW_ISOLATED, WAW_END]: WAW,
+    [YEH_ISOLATED, YEH_START, YEH_MID, YEH_END]: YEH,
+    [ALEF_MADDA_ISOLATED, ALEF_MADDA_END]: ALEF_MADDA,
+    [TEH_MARBUTA_ISOLATED, TEH_MARBUTA_END]: TEH_MARBUTA,
+    [ALEF_MAKSURA_ISOLATED, ALEF_MAKSURA_END]: ALEF_MAKSURA,
+  };
+  static final Map<RegExp, String> LETTERS_NORM_MAP_REG = LETTERS_NORM_MAP
+      .map((key, value) => MapEntry(RegExp("[${key.join()}]"), value));
+
+
   static const LETTERS = [
     ALEF,
     BEH,

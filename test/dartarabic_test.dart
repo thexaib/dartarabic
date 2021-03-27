@@ -64,6 +64,13 @@ void main() {
     expect(DartArabic.normalizeAlef(test), isNot(equals(test)));
   });
 
+test('Normalize Letters', () {
+    String test = "ﻫﻞ";
+    String truth = "هل";
+    expect(DartArabic.normalizeLetters(test), truth);
+    expect(DartArabic.normalizeLetters(test), isNot(equals(test)));
+  });
+
 
 
 }

@@ -16,8 +16,9 @@ Import `'package:dartarabic/dartarabic.dart'` and access the static methods in `
 - [normalizeHamzaUniform](#normalizeHamzaUniform)
 - [normalizeHamzaTasheel](#normalizeHamzaTasheel)
 - [normalizeAlef](#normalizeAlef)
+- [normalizeLetters](#normalizeLetters)
 
-#### stripHarakat
+## stripHarakat
 Strip Harakat from arabic word except Shadda.
 The striped marks are :
 - FATHA, DAMMA, KASRA
@@ -30,7 +31,7 @@ print(DartArabic.stripHarakat("الْعَرَبِيّةُ"));
 ```
 Outputs: `العربيّة`
 
-#### stripTashkeel
+## stripTashkeel
 Strip vowels from a text, include Shadda. The striped marks are :
 - FATHA, DAMMA, KASRA
 - SUKUN
@@ -45,7 +46,7 @@ Outputs: `العربية`
 
 
 
-#### stripDiacritics
+## stripDiacritics
 Strip arabic diacritics from a text. The striped marks are :
 - Small Alef 
 - Harakat + Shadda
@@ -59,7 +60,7 @@ print(DartArabic.stripDiacritics("الْعَرَبِيّةُُ"));
 Outputs: `العربية`
 
 
-#### stripTatweel
+## stripTatweel
  Strip tatweel from a text and return a result text.
 Example:
 ```
@@ -69,7 +70,7 @@ Outputs: `العربيةُ`
 
 
 
-#### stripShadda
+## stripShadda
  Strip Shadda from a text and return a result text.
 
 Example:
@@ -79,7 +80,7 @@ print(DartArabic.stripShadda("الشّمسيّة"));
 Outputs: `الشمسية`
 
 
-#### normalizeLigature
+## normalizeLigature
 Normalize Lam Alef ligatures into two letters (LAM and ALEF),and and return a result text. Some systems present lamAlef ligature as a single letter, this function convert it into two letters, The converted letters into  LAM and ALEF are :
 - LAM_ALEF
 - LAM_ALEF_HAMZA_ABOVE
@@ -93,7 +94,7 @@ print(DartArabic.normalizeLigature("ﻻنحالي ﻷﻹﻵ"));
 Outputs: `لانحالي لالالا`
 
 
-#### normalizeHamzaUniform
+## normalizeHamzaUniform
 Standardize the Hamzat into one form of hamza(uniform method), replace Madda by hamza and alef. Replace the LamAlefs by simplified letters.
 
 Example:
@@ -103,7 +104,7 @@ print(DartArabic.normalizeHamzaUniform("جاء سؤال الأئمة عن الإ
 Outputs: `جاء سءال الءءمة عن الءسلام ءءجلا`
 
 
-#### normalizeHamzaTasheel
+## normalizeHamzaTasheel
 Standardize the Hamzat into one form of hamza(Tasheel method), replace Madda by hamza and alef. Replace the LamAlefs by simplified letters.
 
 Example:
@@ -113,7 +114,7 @@ print(DartArabic.normalizeHamzaTasheel("جاء سؤال الأئمة عن الإ
 Outputs: `جاء سوال الايمة عن الاسلام اجلا`
 
 
-#### normalizeAlef
+## normalizeAlef
 Converts all alefs to ALEF_MAMDODA with the exception of Alef maksura
 
 Example:
@@ -121,4 +122,13 @@ Example:
 print(DartArabic.normalizeAlef("بِٱلْهُدَىٰ"));
 ```
 Outputs: `بِالْهُدَا`
+
+## normalizeLetters
+converts non standard letter characters to single letters. e.g HEH_START ﻫ is converted to ه
+
+Example:
+```
+print(DartArabic.normalizeLetters("ﻫﻞ"));
+```
+Outputs: `هل`
 
