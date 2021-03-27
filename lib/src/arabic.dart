@@ -1,6 +1,6 @@
 import 'package:unicode_data/unicode_data.dart';
 
-class Ar {
+class Arabic {
   static const COMMA = '\u060C';
 
   static const SEMICOLON = '\u061B';
@@ -123,6 +123,31 @@ class Ar {
 
   static const BYTE_ORDER_MARK = '\ufeff';
 
+  //other variations
+  static const KAF_INDOPAK = '\u06a9';
+  static const MEEM_LOW = '\u06ed';
+  static const MEEM_HIGH = '\u06e2';
+  static const EMPTY_ALEF = ALEF_MAKSURA;
+  static const EMPTY_YEH = ALEF;
+  static const SPACE = ' ';
+
+  //stop signs uthmani
+  static const STOP_UTHMANI_ZIM = '\u06da';
+  static const STOP_UTHMANI_LAM = '\u06d9';
+  static const STOP_UTHMANI_SEEN_HIGH = '\u06dc';
+  static const STOP_UTHMANI_MEEM = '\u06d8';
+  static const STOP_UTHMANI_DOTS_THREE = '\u06db';
+  static const STOP_UTHMANI_QAF_LAM = '\u06d7';
+  static const STOP_UTHMANI_SAAD_LAM = '\u06d6';
+  static const UTHMANI_STOPS = [
+    STOP_UTHMANI_ZIM,
+    STOP_UTHMANI_MEEM,
+    STOP_UTHMANI_SAAD_LAM,
+    STOP_UTHMANI_QAF_LAM,
+    STOP_UTHMANI_DOTS_THREE,
+    STOP_UTHMANI_LAM,
+  ];
+
 //   Diacritics                      ;
   static const FATHATAN = '\u064b';
 
@@ -139,6 +164,8 @@ class Ar {
   static const SHADDA = '\u0651';
 
   static const SUKUN = '\u0652';
+  static const SUKUN_CURVY = '\u06e1';
+  static const SUKUN_ROUNDED = '\u06df';
 
 //   Small Letters                   ;
   static const SMALL_ALEF = "\u0670";
@@ -234,6 +261,12 @@ class Ar {
     LAM_ALEF_HAMZA_BELOW,
     LAM_ALEF_MADDA_ABOVE
   ];
+
+  static const SUKUN_MARKS = [SUKUN, SUKUN_CURVY, SUKUN_ROUNDED];
+  static const MEEM_ALL = [MEEM, MEEM_HIGH, MEEM_LOW];
+  static const QALQALA_LETTERS = [DAL, JEEM, BEH, TAH, QAF];
+
+  static const IDGHAM_BEFORE_LETTERS = [WAW, WAW_HAMZA, MEEM, NOON, YEH];
 
   static const HAMZAT = [
     HAMZA,
