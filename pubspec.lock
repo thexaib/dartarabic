@@ -120,13 +120,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
-  isolate:
-    dependency: "direct dev"
-    description:
-      name: isolate
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.3"
   js:
     dependency: transitive
     description:
@@ -280,7 +273,7 @@ packages:
       name: string_validator
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.4"
+    version: "0.3.0"
   term_glyph:
     dependency: transitive
     description:
@@ -322,7 +315,7 @@ packages:
       name: unicode_data
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.1"
+    version: "0.2.0-nullsafety.0"
   vm_service:
     dependency: transitive
     description:
@@ -359,4 +352,4 @@ packages:
     source: hosted
     version: "3.1.0"
 sdks:
-  dart: ">=2.12.0-0.0 <3.0.0"
+  dart: ">=2.12.0 <3.0.0"

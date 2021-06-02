@@ -1,16 +1,15 @@
 name: dartarabic
 description: A specific Arabic language library ported to dart from Python, provides basic functions to manipulate Arabic letters and text.
-version: 0.0.1-dev6
+version: 0.0.1-nullsafety.0
 homepage: https://github.com/thexaib/dartarabic
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
-  string_validator: ^0.1.4
+  string_validator: ^0.3.0
   characters: ^1.1.0-nullsafety.5
-  unicode_data: ^0.1.1
+  unicode_data: ^0.2.0-nullsafety.0
 
 dev_dependencies:
   test: ^1.16.4
-  isolate: ^2.0.3

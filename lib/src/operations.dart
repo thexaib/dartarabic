@@ -41,21 +41,27 @@ class ArOp {
 
   static bool is_sun(String arab) => Arabic.SUN.contains(arab);
 
-  static int order(String archar) => Arabic.ALPHABETIC_ORDER.containsKey(archar)
-      ? Arabic.ALPHABETIC_ORDER[archar]
-      : 0;
+  static int? order(String archar) =>
+      Arabic.ALPHABETIC_ORDER.containsKey(archar)
+          ? Arabic.ALPHABETIC_ORDER[archar]
+          : 0;
 
-  static String name(String archar) =>
+  static String? name(String archar) =>
       Arabic.NAMES.containsKey(archar) ? Arabic.NAMES[archar] : "";
 
   static bool has_shadda(String word) => word.contains(Arabic.SHADDA);
 
   static bool is_vocalized(String word) {
     if (isAlpha(word)) return false;
-    word.iterable(unicode: true).forEach((ch) {
-      if (is_tashkeel(ch)) return false;
-    });
-    return true;
+    bool isTashkeel = true;
+    final letters = word.iterable(unicode: true).toList();
+    for (final ch in letters) {
+      if (is_tashkeel(ch)) {
+        isTashkeel = false;
+        break;
+      }
+    }
+    return isTashkeel;
   }
 
   static bool is_vocalizedtext(String text) =>

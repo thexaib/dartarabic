@@ -200,7 +200,6 @@ class Arabic {
   static const ZAH_START = '\uFEC7';
   static const ZAH_MID = '\uFEC8';
 
-
   static const AIN_ISOLATED = '\uFEC9';
   static const AIN_END = '\uFECA';
   static const AIN_START = '\uFECB';
@@ -338,10 +337,10 @@ class Arabic {
     [JEEM_ISOLATED, JEEM_START, JEEM_MID, JEEM_END]: JEEM,
     [HAH_ISOLATED, HAH_START, HAH_MID, HAH_END]: HAH,
     [KHAH_ISOLATED, KHAH_START, KHAH_MID, KHAH_END]: KHAH,
-    [DAL_ISOLATED,  DAL_END]: DAL,
-    [THAL_ISOLATED,  THAL_END]: THAL,
-    [REH_ISOLATED,  REH_END]: REH,
-    [ZAIN_ISOLATED,  ZAIN_END]: ZAIN,
+    [DAL_ISOLATED, DAL_END]: DAL,
+    [THAL_ISOLATED, THAL_END]: THAL,
+    [REH_ISOLATED, REH_END]: REH,
+    [ZAIN_ISOLATED, ZAIN_END]: ZAIN,
     [SEEN_ISOLATED, SEEN_START, SEEN_MID, SEEN_END]: SEEN,
     [SHEEN_ISOLATED, SHEEN_START, SHEEN_MID, SHEEN_END]: SHEEN,
     [SAD_ISOLATED, SAD_START, SAD_MID, SAD_END]: SAD,
@@ -365,7 +364,6 @@ class Arabic {
   };
   static final Map<RegExp, String> LETTERS_NORM_MAP_REG = LETTERS_NORM_MAP
       .map((key, value) => MapEntry(RegExp("[${key.join()}]"), value));
-
 
   static const LETTERS = [
     ALEF,

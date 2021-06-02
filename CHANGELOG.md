@@ -1,3 +1,5 @@
+## [0.0.1-nullsafety.0]
+- migrated to null-safety
 ## [0.0.1-dev6]
 - Added normalizeLetters
 ## [0.0.1-dev5]

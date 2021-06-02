@@ -7,16 +7,16 @@ Parsing Arabic text in Dart
 Import `'package:dartarabic/dartarabic.dart'` and access the static methods in `DartArabic` class
 
 ## Methods
-- [stripHarakat](#stripHarakat)
-- [stripTashkeel](#stripTashkeel)
-- [stripDiacritics](#stripDiacritics)
-- [stripTatweel](#stripTatweel)
-- [stripShadda](#stripShadda)
-- [normalizeLigature](#normalizeLigature)
-- [normalizeHamzaUniform](#normalizeHamzaUniform)
-- [normalizeHamzaTasheel](#normalizeHamzaTasheel)
-- [normalizeAlef](#normalizeAlef)
-- [normalizeLetters](#normalizeLetters)
+- [stripHarakat](#stripharakat)
+- [stripTashkeel](#striptashkeel)
+- [stripDiacritics](#stripdiacritics)
+- [stripTatweel](#striptatweel)
+- [stripShadda](#stripshadda)
+- [normalizeLigature](#normalizeligature)
+- [normalizeHamzaUniform](#normalizehamzauniform)
+- [normalizeHamzaTasheel](#normalizehamzatasheel)
+- [normalizeAlef](#normalizealef)
+- [normalizeLetters](#normalizeletters)
 
 ## stripHarakat
 Strip Harakat from arabic word except Shadda.
