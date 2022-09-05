@@ -7,32 +7,36 @@ void main() async {
 
   stopwatch.reset();
   stopwatch.start();
-  output = DartArabic.stripHarakat("الْعَرَبِيّةُ");
+  // output = DartArabic.stripHarakat("الْعَرَبِيّةُ");
+  output = "الْعَرَبِيّةُ".stripHarakat();
+
   print("stripHarakat ${stopwatch.elapsedMilliseconds}ms: $output");
 
   stopwatch.reset();
   stopwatch.start();
-  output = DartArabic.stripHarakat("الْعَرَبِيّةُ");
-  print("stripHarakat ${stopwatch.elapsedMilliseconds}ms: $output");
+  //output = DartArabic.stripTashkeel("الْعَرَبِيّةُُ");
+  output = "الْعَرَبِيّةُُ".stripTashkeel();
 
-  stopwatch.reset();
-  stopwatch.start();
-  output = DartArabic.stripTashkeel("الْعَرَبِيّةُُ");
   print("stripTashkeel ${stopwatch.elapsedMilliseconds}ms: $output");
 
   stopwatch.reset();
   stopwatch.start();
-  output = DartArabic.stripShadda("الشّمسيّة");
+  //output = DartArabic.stripShadda("الشّمسيّة");
+  output = "الشّمسيّة".stripShadda();
   print("stripShadda ${stopwatch.elapsedMilliseconds}ms: $output");
 
   stopwatch.reset();
   stopwatch.start();
-  output = DartArabic.normalizeLigature("ﻻنحالي ﻷﻹﻵ");
+  //output = DartArabic.normalizeLigature("ﻻنحالي ﻷﻹﻵ");
+  output = "ﻻنحالي ﻷﻹﻵ".normalizeLigature();
+
   print("normalizeLigature ${stopwatch.elapsedMilliseconds}ms: $output");
 
   stopwatch.reset();
   stopwatch.start();
-  output = DartArabic.normalizeHamzaUniform("جاء سؤال الأئمة عن الإسلام آجلا");
+  //output = DartArabic.normalizeHamzaUniform("جاء سؤال الأئمة عن الإسلام آجلا");
+  output = "جاء سؤال الأئمة عن الإسلام آجلا".normalizeHamzaUniform();
+
   print("normalizeHamzaUniform ${stopwatch.elapsedMilliseconds}ms: $output");
 
   stopwatch.reset();
