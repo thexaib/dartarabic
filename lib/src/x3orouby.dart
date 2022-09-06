@@ -33,3 +33,8 @@ extension x3orouby on String {
   /// converts non standard letter characters to single letters. e.g HEH_START ﻫ is converted to ه
   String normalizeLetters() => ArOp.normalize_letters(this);
 }
+
+extension n3orouby on num {
+  /// Convert number to ordinal words
+  String spellingNumber() => ArOp.spellingNumber(this);
+}
