@@ -71,6 +71,12 @@ test('Normalize Letters', () {
     expect(DartArabic.normalizeLetters(test), isNot(equals(test)));
   });
 
-
+  test('Strip Diacritics', () {
+    String test = "الرّحمٰن";
+    String truth = "الرحمن";
+    final result = DartArabic.stripDiacritics(test);
+    expect(result, truth);
+    expect(result, isNot(equals(test)));
+  });
 
 }

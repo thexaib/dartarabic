@@ -1,7 +1,7 @@
 # Dart Arabic
 
 Parsing Arabic text in Dart
-(Partial) Port of PyArabic `https://github.com/linuxscout/pyarabic`
+(Partial) Port of PyArabic [http://github.com/linuxscout/pyarabic](https://github.com/linuxscout/pyarabic)
 
 [Changelog](CHANGELOG.md)
 
