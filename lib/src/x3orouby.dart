@@ -1,40 +1,40 @@
-import 'package:spelling_number/spelling_number.dart';
-
 import 'operations.dart';
 
-abstract class DartArabic {
+extension x3orouby on String {
   /// Strip Harakat from [text] arabic word except Shadda. The striped marks are : FATHA, DAMMA, KASRA,  FATHATAN, DAMMATAN, KASRATAN,SUKUN Marks,
-  static String stripHarakat(String text) => ArOp.strip_harakat(text);
+  String stripHarakat() => ArOp.strip_harakat(this);
 
   /// Strip vowels from [text], include Shadda. The striped marks are : FATHA, DAMMA, KASRA, SUKUN, SHADDA, FATHATAN, DAMMATAN, KASRATAN
-  static String stripTashkeel(String text) => ArOp.strip_tashkeel(text);
+  String stripTashkeel() => ArOp.strip_tashkeel(this);
 
   /// Strip arabic diacritics from [text]. The striped marks are : Small Alef, Harakat + Shadda, Quranic marks, Extended arabic diacritics
-  static String stripDiacritics(String text) => ArOp.strip_diacritics(text);
+  String stripDiacritics() => ArOp.strip_diacritics(this);
 
   /// Strip tatweel from [text] and return a result text.
-  static String stripTatweel(String text) => ArOp.strip_tatweel(text);
+  String stripTatweel() => ArOp.strip_tatweel(this);
 
   /// Strip Shadda from [text] and return a result text.
-  static String stripShadda(String text) => ArOp.strip_shadda(text);
+  String stripShadda() => ArOp.strip_shadda(this);
 
   /// Normalize Lam Alef ligatures into two letters (LAM and ALEF), and Tand return a result text.Some systems present lamAlef ligature as a single letter, this function convert it into two letters, The converted letters into  LAM and ALEF are  :  LAM_ALEF, LAM_ALEF_HAMZA_ABOVE, LAM_ALEF_HAMZA_BELOW, LAM_ALEF_MADDA_ABOVE
-  static String normalizeLigature(String text) => ArOp.normalize_ligature(text);
+  String normalizeLigature() => ArOp.normalize_ligature(this);
 
   /// Standardize the Hamzat into one form of hamza (uniform method), replace Madda by hamza and alef. Replace the LamAlefs by simplified letters.
-  static String normalizeHamzaUniform(String text) =>
-      ArOp.normalize_hamza(text, method: ArOp.METHOD_UNIFORM);
+  String normalizeHamzaUniform() =>
+      ArOp.normalize_hamza(this, method: ArOp.METHOD_UNIFORM);
 
   /// Standardize the Hamzat into one form of hamza (Tasheel method), replace Madda by hamza and alef. Replace the LamAlefs by simplified letters.
-  static String normalizeHamzaTasheel(String text) =>
-      ArOp.normalize_hamza(text, method: ArOp.METHOD_TASHEEL);
+  String normalizeHamzaTasheel() =>
+      ArOp.normalize_hamza(this, method: ArOp.METHOD_TASHEEL);
 
   /// converts all alefs to ALEF_MAMDODA with the exception of Alef maksura
-  static String normalizeAlef(String text) => ArOp.normalize_alef(text);
+  String normalizeAlef() => ArOp.normalize_alef(this);
 
   /// converts non standard letter characters to single letters. e.g HEH_START ﻫ is converted to ه
-  static String normalizeLetters(String text) => ArOp.normalize_letters(text);
+  String normalizeLetters() => ArOp.normalize_letters(this);
+}
 
+extension n3orouby on num {
   /// Convert number to ordinal words
-  static String spellingNumber(num number) => ArOp.spellingNumber(number);
+  String spellingNumber() => ArOp.spellingNumber(this);
 }
