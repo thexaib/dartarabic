@@ -1,3 +1,4 @@
+- ADDED to ArabicSymbols, the symbols which were part of `dartarabic-0.0.1-nullsafety.1` but was not committed to github
 - [New] `Arabic.IKHFA_BEFORE_LETTERS` list is added. Documentation to `Arabic` classes fields added. still incomplete
 - [Breaking] Marks,Numbers and symbols in `Arabic` class are now should be accessed as `Arabic.Symbols`. 
 - test case for `stripDiacritics` added

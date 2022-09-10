@@ -5,34 +5,45 @@ class ArabicSymbols {
   ArabicSymbols();
 
   // numbers
-  static const ZERO = '\u0660';
+  final ZERO = '\u0660';
 
-  static const ONE = '\u0661';
+  final ONE = '\u0661';
 
-  static const TWO = '\u0662';
+  final TWO = '\u0662';
 
-  static const THREE = '\u0663';
+  final THREE = '\u0663';
 
-  static const FOUR = '\u0664';
+  final FOUR = '\u0664';
 
-  static const FIVE = '\u0665';
+  final FIVE = '\u0665';
 
-  static const SIX = '\u0666';
+  final SIX = '\u0666';
 
-  static const SEVEN = '\u0667';
+  final SEVEN = '\u0667';
 
-  static const EIGHT = '\u0668';
+  final EIGHT = '\u0668';
 
-  static const NINE = '\u0669';
+  final NINE = '\u0669';
 
-  static const PERCENT = '\u066a';
+  final PERCENT = '\u066a';
 
-  static const DECIMAL = '\u066b';
+  final DECIMAL = '\u066b';
 
-  static const THOUSANDS = '\u066c';
+  final THOUSANDS = '\u066c';
 
   // ./numbers
-  static const STAR = '\u066d';
+  final STAR = '\u066d';
+  final STAR_RUBEL_HIZEB = '\u06DE';
+  final ZERO_WIDTH_JOINER = '\u200D';
+  final DATE_SEPARATOR = '\u060D';
+  final SIGN_POETIC_VERSE = '\u060E';
+  final SIGN_MISRA = '\u060F';
+  final SIGN_AYAH_END = '\u06DD';
+  final SIGN_SAJDAH = '\u06E9';
+  final TRIPPLE_DOT = '\u061E';
+
+  final PARENTHESIS_LEFT = '\uFD3E';
+  final PARENTHESIS_RIGHT = '\uFD3F';
 
   final COMMA = '\u060C';
 
