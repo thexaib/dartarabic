@@ -1,3 +1,6 @@
+# Changelog
+
+- removed `unicode_data` dependency. migrated to full null-safety.
 ## [0.0.1-nullsafety.0]
 - migrated to null-safety
 ## [0.0.1-dev6]

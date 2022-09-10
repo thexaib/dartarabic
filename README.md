@@ -3,6 +3,8 @@
 Parsing Arabic text in Dart
 (Partial) Port of PyArabic `https://github.com/linuxscout/pyarabic`
 
+[Changelog](CHANGELOG.md)
+
 ## Usage
 Import `'package:dartarabic/dartarabic.dart'` and access the static methods in `DartArabic` class
 

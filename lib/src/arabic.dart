@@ -1,4 +1,5 @@
-import 'package:unicode_data/unicode_data.dart';
+
+import 'package:dartarabic/src/unicode_data/script.dart';
 
 /// Class defining Arabic letters,characters and marks
 class Arabic {
