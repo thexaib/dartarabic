@@ -17,7 +17,6 @@ Import `'package:dartarabic/dartarabic.dart'` and access the static methods in `
 - [normalizeHamzaTasheel](#normalizehamzatasheel)
 - [normalizeAlef](#normalizealef)
 - [normalizeLetters](#normalizeletters)
-- [spellingNumber](#spellingNumber)
 
 ## stripHarakat
 Strip Harakat from arabic word except Shadda.
@@ -29,10 +28,6 @@ The striped marks are :
 Example:
 ```
 print(DartArabic.stripHarakat("الْعَرَبِيّةُ"));
-```
-or
-```
-print("الْعَرَبِيّةُ".stripHarakat());
 ```
 Outputs: `العربيّة`
 
@@ -46,10 +41,6 @@ Strip vowels from a text, include Shadda. The striped marks are :
 Example:
 ```
 print(DartArabic.stripTashkeel("الْعَرَبِيّةُُ"));
-```
-or 
-```
-print("الْعَرَبِيّةُُ".stripTashkeel());
 ```
 Outputs: `العربية`
 
@@ -66,10 +57,6 @@ Example:
 ```
 print(DartArabic.stripDiacritics("الْعَرَبِيّةُُ"));
 ```
-or 
-```
-print("الْعَرَبِيّةُُ".stripDiacritics());
-```
 Outputs: `العربية`
 
 
@@ -78,10 +65,6 @@ Outputs: `العربية`
 Example:
 ```
 print(DartArabic.stripTatweel("العـــــربيةُ"));
-```
-or
-```
-print("العـــــربيةُ".stripTatweel());
 ```
 Outputs: `العربيةُ`
 
@@ -93,10 +76,6 @@ Outputs: `العربيةُ`
 Example:
 ```
 print(DartArabic.stripShadda("الشّمسيّة"));
-```
-or 
-```
-print("الشّمسيّة".stripShadda());
 ```
 Outputs: `الشمسية`
 
@@ -112,10 +91,6 @@ Example:
 ```
 print(DartArabic.normalizeLigature("ﻻنحالي ﻷﻹﻵ"));
 ```
-or 
-```
-print("ﻻنحالي ﻷﻹﻵ".normalizeLigature());
-```
 Outputs: `لانحالي لالالا`
 
 
@@ -125,10 +100,6 @@ Standardize the Hamzat into one form of hamza(uniform method), replace Madda by 
 Example:
 ```
 print(DartArabic.normalizeHamzaUniform("جاء سؤال الأئمة عن الإسلام آجلا"));
-```
-or
-```
-print("جاء سؤال الأئمة عن الإسلام آجلا".normalizeHamzaUniform());
 ```
 Outputs: `جاء سءال الءءمة عن الءسلام ءءجلا`
 
@@ -140,10 +111,6 @@ Example:
 ```
 print(DartArabic.normalizeHamzaTasheel("جاء سؤال الأئمة عن الإسلام آجلا"));
 ```
-or
-```
-print("جاء سؤال الأئمة عن الإسلام آجلا".normalizeHamzaTasheel());
-```
 Outputs: `جاء سوال الايمة عن الاسلام اجلا`
 
 
@@ -154,10 +121,6 @@ Example:
 ```
 print(DartArabic.normalizeAlef("بِٱلْهُدَىٰ"));
 ```
-or
-```
-print("بِٱلْهُدَىٰ".normalizeAlef());
-```
 Outputs: `بِالْهُدَا`
 
 ## normalizeLetters
@@ -167,21 +130,5 @@ Example:
 ```
 print(DartArabic.normalizeLetters("ﻫﻞ"));
 ```
-or 
-```
-print("ﻫﻞ".normalizeLetters());
-```
 Outputs: `هل`
 
-## spellingNumber
-Convert number to ordinal words.
-
-Example:
-```
-print(DartArabic.spellingNumber(1125));
-```
-or
-```
-print(1125.spellingNumber());
-```
-Outputs: `ألف ومائة وخمسة وعشرون`

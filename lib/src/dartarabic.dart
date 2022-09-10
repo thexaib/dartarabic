@@ -1,5 +1,3 @@
-import 'package:spelling_number/spelling_number.dart';
-
 import 'operations.dart';
 
 abstract class DartArabic {
@@ -34,7 +32,4 @@ abstract class DartArabic {
 
   /// converts non standard letter characters to single letters. e.g HEH_START ﻫ is converted to ه
   static String normalizeLetters(String text) => ArOp.normalize_letters(text);
-
-  /// Convert number to ordinal words
-  static String spellingNumber(num number) => ArOp.spellingNumber(number);
 }

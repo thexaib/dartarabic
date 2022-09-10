@@ -1,6 +1,5 @@
 import 'package:dartarabic/src/extensions.dart';
 import 'package:string_validator/string_validator.dart';
-import 'package:spelling_number/spelling_number.dart';
 
 import 'arabic.dart';
 
@@ -166,9 +165,5 @@ class ArOp {
         RegExp(Arabic.ALEF_MAKSURA + Arabic.SMALL_ALEF), Arabic.ALEF_MAKSURA);
     nstring = nstring.replaceAll(Arabic.ALEFAT_PATTERN, Arabic.ALEF);
     return nstring;
-  }
-
-  static String spellingNumber(num number) {
-    return SpellingNumber(lang: 'ar').convert(number);
   }
 }

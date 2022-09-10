@@ -10,7 +10,6 @@ dependencies:
   string_validator: ^0.3.0
   characters: ^1.1.0-nullsafety.5
   unicode_data: ^0.2.0-nullsafety.0
-  spelling_number: ^0.0.4
 
 dev_dependencies:
   test: ^1.16.4
