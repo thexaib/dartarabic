@@ -11,7 +11,7 @@ class DartArabic {
   /// Strip arabic diacritics from [text]. The striped marks are : Small Alef, Harakat + Shadda, Quranic marks, Extended arabic diacritics
   static String stripDiacritics(String text) => ArOp.strip_diacritics(text);
 
-  /// Strip tatweel from [text] and return a result text.
+  /// Strip tatweel (elongation characters) from [text] and return a result text.
   static String stripTatweel(String text) => ArOp.strip_tatweel(text);
 
   /// Strip Shadda from [text] and return a result text.

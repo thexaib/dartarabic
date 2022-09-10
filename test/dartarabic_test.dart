@@ -1,3 +1,4 @@
+import 'package:dartarabic/dartarabic.dart';
 import 'package:test/test.dart';
 import 'package:dartarabic/src/dartarabic.dart';
 

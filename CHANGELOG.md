@@ -1,7 +1,7 @@
 # Changelog
 
-- test case for `stripDiacritics` added
-- removed `unicode_data` dependency. migrated to full null-safety.
+- [New] `Arabic.IKHFA_BEFORE_LETTERS` list is added
+- [Breaking] Marks,Numbers and symbols in `Arabic` class now should be  accessed as `Arabic.Symbols`.
 ## [0.0.1-nullsafety.0]
 - migrated to null-safety
 ## [0.0.1-dev6]

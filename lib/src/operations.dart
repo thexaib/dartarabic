@@ -1,27 +1,27 @@
 import 'package:dartarabic/src/extensions.dart';
 import 'package:string_validator/string_validator.dart';
 
-import 'arabic.dart';
+import 'arabic/arabic.dart';
 
 class ArOp {
   static const String METHOD_UNIFORM = "uniform";
   static const String METHOD_TASHEEL = "tasheel";
 
-  static bool is_sukun(String arab) => arab.compareTo(Arabic.SUKUN) == 0;
+  static bool is_sukun(String arab) => arab.compareTo(Arabic.Symbols.SUKUN) == 0;
 
-  static bool is_shadda(String arab) => arab.compareTo(Arabic.SHADDA) == 0;
+  static bool is_shadda(String arab) => arab.compareTo(Arabic.Symbols.SHADDA) == 0;
 
   static bool is_tatweel(String arab) => arab.compareTo(Arabic.TATWEEL) == 0;
 
-  static bool is_tanwin(String arab) => Arabic.TANWIN.contains(arab);
+  static bool is_tanwin(String arab) => Arabic.Symbols.TANWIN.contains(arab);
 
-  static bool is_tashkeel(String arab) => Arabic.TASHKEEL.contains(arab);
+  static bool is_tashkeel(String arab) => Arabic.Symbols.TASHKEEL.contains(arab);
 
-  static bool is_haraka(String arab) => Arabic.HARAKAT.contains(arab);
+  static bool is_haraka(String arab) => Arabic.Symbols.HARAKAT.contains(arab);
 
-  static bool is_shortharaka(String arab) => Arabic.SHORTHARAKAT.contains(arab);
+  static bool is_shortharaka(String arab) => Arabic.Symbols.SHORTHARAKAT.contains(arab);
 
-  static bool is_ligature(String arab) => Arabic.LIGUATURES.contains(arab);
+  static bool is_ligature(String arab) => Arabic.LIGATURES.contains(arab);
 
   static bool is_hamza(String arab) => Arabic.HAMZAT.contains(arab);
 
@@ -49,7 +49,7 @@ class ArOp {
   static String? name(String archar) =>
       Arabic.NAMES.containsKey(archar) ? Arabic.NAMES[archar] : "";
 
-  static bool has_shadda(String word) => word.contains(Arabic.SHADDA);
+  static bool has_shadda(String word) => word.contains(Arabic.Symbols.SHADDA);
 
   static bool is_vocalized(String word) {
     if (isAlpha(word)) return false;
@@ -65,12 +65,12 @@ class ArOp {
   }
 
   static bool is_vocalizedtext(String text) =>
-      Arabic.HARAKAT_PATTERN.hasMatch(text);
+      Arabic.Symbols.HARAKAT_PATTERN.hasMatch(text);
 
   static String strip_harakat(String text) {
     if (is_vocalized(text)) {
       String nstring = text;
-      Arabic.HARAKAT.forEach((element) {
+      Arabic.Symbols.HARAKAT.forEach((element) {
         nstring = nstring.replaceAll(RegExp(element, unicode: true), "");
       });
       return nstring;
@@ -81,7 +81,7 @@ class ArOp {
   static String strip_tashkeel(String text) {
     if (is_vocalized(text)) {
       String nstring = text;
-      Arabic.TASHKEEL.forEach((element) {
+      Arabic.Symbols.TASHKEEL.forEach((element) {
         nstring = nstring.replaceAll(RegExp(element, unicode: true), "");
       });
       return nstring;
@@ -92,7 +92,7 @@ class ArOp {
   static String strip_diacritics(String text) {
     if (is_vocalized(text)) {
       String nstring = text;
-      Arabic.DIACRITICS.forEach((element) {
+      Arabic.Symbols.DIACRITICS.forEach((element) {
         nstring = nstring.replaceAll(RegExp(element, unicode: true), "");
       });
       return nstring;
@@ -104,7 +104,7 @@ class ArOp {
       text.replaceAll(RegExp(Arabic.TATWEEL, unicode: true), "");
 
   static String strip_shadda(String text) =>
-      text.replaceAll(RegExp(Arabic.SHADDA, unicode: true), "");
+      text.replaceAll(RegExp(Arabic.Symbols.SHADDA, unicode: true), "");
 
   static String normalize_ligature(String text) =>
       text.replaceAll(Arabic.LIGUATURES_PATTERN, "${Arabic.LAM}${Arabic.ALEF}");
@@ -139,8 +139,8 @@ class ArOp {
         var part = parts[i];
         if (part.startsWith(RegExp(Arabic.ALEF_MADDA))) {
           if (part.length >= 3 &&
-              Arabic.HARAKAT.contains(part[1]) == false &&
-              (part[2] == Arabic.SHADDA || part.length == 3)) {
+              Arabic.Symbols.HARAKAT.contains(part[1]) == false &&
+              (part[2] == Arabic.Symbols.SHADDA || part.length == 3)) {
             part = "${Arabic.HAMZA}${Arabic.ALEF}${part.substring(1)}";
           } else {
             part = "${Arabic.HAMZA}${Arabic.HAMZA}${part.substring(1)}";

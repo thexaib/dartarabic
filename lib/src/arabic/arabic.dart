@@ -1,16 +1,16 @@
-
-import 'package:dartarabic/src/unicode_data/script.dart';
+import 'package:dartarabic/src/arabic/arabic_symbols.dart';
 
 /// Class defining Arabic letters,characters and marks
 class Arabic {
-  static const COMMA = '\u060C';
+  const Arabic._();
 
-  static const SEMICOLON = '\u061B';
+  /// Punctuation  Symbols and marks
+  static final ArabicSymbols Symbols = ArabicSymbols();
 
-  static const QUESTION = '\u061F';
-
+  /// Hamaza letter
   static const HAMZA = '\u0621';
 
+  /// Alef Madda character Normalized Form
   static const ALEF_MADDA = '\u0622';
 
   static const ALEF_HAMZA_ABOVE = '\u0623';
@@ -21,109 +21,116 @@ class Arabic {
 
   static const YEH_HAMZA = '\u0626';
 
+  /// Alef character Normalized Form
   static const ALEF = '\u0627';
 
+  /// Beh character Normalized Form
   static const BEH = '\u0628';
 
+  /// Teh-Marbuta character Normalized Form
   static const TEH_MARBUTA = '\u0629';
 
+  /// Teh character Normalized Form
   static const TEH = '\u062a';
 
+  /// Theh character Normalized Form
   static const THEH = '\u062b';
 
+  /// Jeem character Normalized Form
   static const JEEM = '\u062c';
 
+  /// Hah character Normalized Form
   static const HAH = '\u062d';
 
+  /// Khah character Normalized Form
   static const KHAH = '\u062e';
 
+  /// Dal character Normalized Form
   static const DAL = '\u062f';
 
+  /// Thal character Normalized Form
   static const THAL = '\u0630';
 
+  /// Reh character Normalized Form
   static const REH = '\u0631';
 
+  /// Zain character Normalized Form
   static const ZAIN = '\u0632';
 
+  /// Seen character Normalized Form
   static const SEEN = '\u0633';
 
+  /// Sheen character Normalized Form
   static const SHEEN = '\u0634';
 
+  /// Sad character Normalized Form
   static const SAD = '\u0635';
 
+  /// Dad character Normalized Form
   static const DAD = '\u0636';
 
+  /// Tah character Normalized Form
   static const TAH = '\u0637';
 
+  /// Zah character Normalized Form
   static const ZAH = '\u0638';
 
+  /// Ain character Normalized Form
   static const AIN = '\u0639';
 
+  /// Ghain character Normalized Form
   static const GHAIN = '\u063a';
 
-  static const TATWEEL = '\u0640';
-
+  /// Feh character Normalized Form
   static const FEH = '\u0641';
 
+  /// Qaf character Normalized Form
   static const QAF = '\u0642';
 
+  /// Kaf character Normalized Form
   static const KAF = '\u0643';
 
+  /// Lam character Normalized Form
   static const LAM = '\u0644';
 
+  /// Meem character Normalized Form
   static const MEEM = '\u0645';
 
+  /// Noon character Normalized Form
   static const NOON = '\u0646';
 
+  /// Heh character Normalized Form
   static const HEH = '\u0647';
 
+  /// Waw character Normalized Form
   static const WAW = '\u0648';
 
-  static const ALEF_MAKSURA = '\u0649';
-
+  /// Yeh character Normalized Form
   static const YEH = '\u064a';
 
+  /// Character Madda-Above
   static const MADDA_ABOVE = '\u0653';
 
+  /// Character Hamza-Above
   static const HAMZA_ABOVE = '\u0654';
 
+  /// Character Hamza-Below
   static const HAMZA_BELOW = '\u0655';
-
-  static const ZERO = '\u0660';
-
-  static const ONE = '\u0661';
-
-  static const TWO = '\u0662';
-
-  static const THREE = '\u0663';
-
-  static const FOUR = '\u0664';
-
-  static const FIVE = '\u0665';
-
-  static const SIX = '\u0666';
-
-  static const SEVEN = '\u0667';
-
-  static const EIGHT = '\u0668';
-
-  static const NINE = '\u0669';
-
-  static const PERCENT = '\u066a';
-
-  static const DECIMAL = '\u066b';
-
-  static const THOUSANDS = '\u066c';
-
-  static const STAR = '\u066d';
 
   static const MINI_ALEF = '\u0670';
 
+  /// Character Alef-Wasla , see also [ALEFAT]
   static const ALEF_WASLA = '\u0671';
 
-  static const FULL_STOP = '\u06d4';
+  /// Alef-Maksura character Normalized Form
+  static const ALEF_MAKSURA = '\u0649';
 
-  static const BYTE_ORDER_MARK = '\ufeff';
+  /// Elongation character Tatweel
+  static const TATWEEL = '\u0640';
+
+  /// Elongation character, same as [TATWEEL]
+  static const KASHIDA = TATWEEL;
+
 
   //Letter variants
   static const ALEF_ISOLATED = '\uFE8D';
@@ -257,79 +264,65 @@ class Arabic {
   static const ALEF_MADDA_ISOLATED = '\uFE81';
   static const ALEF_MADDA_END = '\uFE82';
 
+  /// Character Teh Marbuta Isolated Form
   static const TEH_MARBUTA_ISOLATED = '\uFE93';
+  /// Character Teh Marbuta End Form
   static const TEH_MARBUTA_END = '\uFE94';
 
+  /// Character Alef Maksura Isolated Form
   static const ALEF_MAKSURA_ISOLATED = '\uFEEF';
+  /// Character Alef Maksura End form
   static const ALEF_MAKSURA_END = '\uFEF0';
 
   //other variations
+  /// Character Meem Indo-Pak Variant
   static const KAF_INDOPAK = '\u06a9';
+  /// Character Meem Low
   static const MEEM_LOW = '\u06ed';
+  /// Character Meem High
   static const MEEM_HIGH = '\u06e2';
-  static const EMPTY_ALEF = ALEF_MAKSURA;
-  static const EMPTY_YEH = ALEF;
-  static const SPACE = ' ';
-
-  //stop signs uthmani
-  static const STOP_UTHMANI_ZIM = '\u06da';
-  static const STOP_UTHMANI_LAM = '\u06d9';
-  static const STOP_UTHMANI_SEEN_HIGH = '\u06dc';
-  static const STOP_UTHMANI_MEEM = '\u06d8';
-  static const STOP_UTHMANI_DOTS_THREE = '\u06db';
-  static const STOP_UTHMANI_QAF_LAM = '\u06d7';
-  static const STOP_UTHMANI_SAAD_LAM = '\u06d6';
-  static const UTHMANI_STOPS = [
-    STOP_UTHMANI_ZIM,
-    STOP_UTHMANI_MEEM,
-    STOP_UTHMANI_SAAD_LAM,
-    STOP_UTHMANI_QAF_LAM,
-    STOP_UTHMANI_DOTS_THREE,
-    STOP_UTHMANI_LAM,
-  ];
-
-//   Diacritics                      ;
-  static const FATHATAN = '\u064b';
-
-  static const DAMMATAN = '\u064c';
-
-  static const KASRATAN = '\u064d';
-
-  static const FATHA = '\u064e';
-
-  static const DAMMA = '\u064f';
-
-  static const KASRA = '\u0650';
-
-  static const SHADDA = '\u0651';
-
-  static const SUKUN = '\u0652';
-  static const SUKUN_CURVY = '\u06e1';
-  static const SUKUN_ROUNDED = '\u06df';
 
 //   Small Letters                   ;
+  /// Character Small Alef
   static const SMALL_ALEF = "\u0670";
 
+  /// Character Small Waw
   static const SMALL_WAW = "\u06E5";
 
+  /// Character Small Yeh
   static const SMALL_YEH = "\u06E6";
 
-//   #Ligatures                        ;
+// Ligatures
+
+  /// Lam-Alef Ligature
   static const LAM_ALEF = '\ufefb';
 
+  /// Lam-Alef-Hamza-Above Ligature
   static const LAM_ALEF_HAMZA_ABOVE = '\ufef7';
 
+  /// Lam-Alef-Hamza-Below Ligature
   static const LAM_ALEF_HAMZA_BELOW = '\ufef9';
 
+  /// Lam-Alef-Madda-Above Ligature
   static const LAM_ALEF_MADDA_ABOVE = '\ufef5';
 
+// ./Ligatures
+
+  /// Lam-Alef two characters string
   static const SIMPLE_LAM_ALEF = '\u0644\u0627';
 
+  /// Lam-Alef-Hamza-Above two characters string
   static const SIMPLE_LAM_ALEF_HAMZA_ABOVE = '\u0644\u0623';
+
+  /// Lam-Alef-Hamza-Below two characters string
   static const SIMPLE_LAM_ALEF_HAMZA_BELOW = '\u0644\u0625';
+
+  /// Lam-Alef-Hamza-Above two characters string
   static const SIMPLE_LAM_ALEF_MADDA_ABOVE = '\u0644\u0622';
 
 //  # groups
+
+  /// Map of all Variant-Letters to Normalize letter in Arabic
   static const Map<List<String>, String> LETTERS_NORM_MAP = {
     [ALEF_ISOLATED, ALEF_END]: ALEF,
     [BEH_ISOLATED, BEH_START, BEH_MID, BEH_END]: BEH,
@@ -363,9 +356,12 @@ class Arabic {
     [TEH_MARBUTA_ISOLATED, TEH_MARBUTA_END]: TEH_MARBUTA,
     [ALEF_MAKSURA_ISOLATED, ALEF_MAKSURA_END]: ALEF_MAKSURA,
   };
+
+  /// Map of all [RegExp] to match and replace Letters to Normalized Letters
   static final Map<RegExp, String> LETTERS_NORM_MAP_REG = LETTERS_NORM_MAP
       .map((key, value) => MapEntry(RegExp("[${key.join()}]"), value));
 
+  /// List of All Arabic Alphbet Letters
   static const LETTERS = [
     ALEF,
     BEH,
@@ -404,46 +400,18 @@ class Arabic {
     YEH_HAMZA
   ];
 
-  static const TASHKEEL = [
-    FATHATAN,
-    DAMMATAN,
-    KASRATAN,
-    FATHA,
-    DAMMA,
-    KASRA,
-    SUKUN,
-    SHADDA
-  ];
-
-  static const HARAKAT = [
-    FATHATAN,
-    DAMMATAN,
-    KASRATAN,
-    FATHA,
-    DAMMA,
-    KASRA,
-    ...SUKUN_MARKS,
-  ];
-
-  static const SHORTHARAKAT = [FATHA, DAMMA, KASRA, SUKUN];
-
-  static const TANWIN = [FATHATAN, DAMMATAN, KASRATAN];
-
-  static const NOT_DEF_HARAKA = TATWEEL;
-
-  static const LIGUATURES = [
+  /// List of Ligature Letters
+  static const LIGATURES = [
     LAM_ALEF,
     LAM_ALEF_HAMZA_ABOVE,
     LAM_ALEF_HAMZA_BELOW,
     LAM_ALEF_MADDA_ABOVE
   ];
 
-  static const SUKUN_MARKS = [SUKUN, SUKUN_CURVY, SUKUN_ROUNDED];
+  /// List of all variants of Meem(s)
   static const MEEM_ALL = [MEEM, MEEM_HIGH, MEEM_LOW];
-  static const QALQALA_LETTERS = [DAL, JEEM, BEH, TAH, QAF];
 
-  static const IDGHAM_BEFORE_LETTERS = [WAW, WAW_HAMZA, MEEM, NOON, YEH];
-
+  /// List of all variants of Hamza(s)
   static const HAMZAT = [
     HAMZA,
     WAW_HAMZA,
@@ -454,6 +422,7 @@ class Arabic {
     ALEF_HAMZA_ABOVE
   ];
 
+  /// List of all variants of Alef(s)
   static const ALEFAT = [
     ALEF,
     ALEF_MADDA,
@@ -464,14 +433,51 @@ class Arabic {
     SMALL_ALEF
   ];
 
+  /// List of Weak vowel letters
   static const WEAK = [ALEF, WAW, YEH, ALEF_MAKSURA];
+
+  /// List of Yeh like letters
   static const YEHLIKE = [YEH, YEH_HAMZA, ALEF_MAKSURA, SMALL_YEH];
 
+  /// List of Waw like letters
   static const WAWLIKE = [WAW, WAW_HAMZA, SMALL_WAW];
+
+  /// List of Teh like letters
   static const TEHLIKE = [TEH, TEH_MARBUTA];
 
+  /// List of Small Alef(s)
   static const SMALL = [SMALL_ALEF, SMALL_WAW, SMALL_YEH];
 
+  // Tajweed Related
+  /// Letters of Qalqala, strong sounds
+  static const QALQALA_LETTERS = [DAL, JEEM, BEH, TAH, QAF];
+
+  /// Letters before which Idgham is performed
+  static const IDGHAM_BEFORE_LETTERS = [WAW, WAW_HAMZA, MEEM, NOON, YEH];
+
+  /// Letters before which Ikhfa is performed
+  static const IKHFA_BEFORE_LETTERS = [
+    SAD,
+    THAL,
+    THEH,
+    KAF,
+    KAF_INDOPAK,
+    JEEM,
+    SHEEN,
+    QAF,
+    SEEN,
+    DAL,
+    TAH,
+    ZAH,
+    FEH,
+    TEH,
+    DAD,
+    ZAIN,
+  ];
+
+  // ./Tajweed Related
+
+  /// Moon(Qamari) Letters
   static const MOON = [
     HAMZA,
     ALEF_MADDA,
@@ -493,6 +499,7 @@ class Arabic {
     YEH
   ];
 
+  /// Sun (Shamsi) letters
   static const SUN = [
     TEH,
     THEH,
@@ -510,7 +517,8 @@ class Arabic {
     NOON,
   ];
 
-  static const ALPHABETIC_ORDER = {
+  /// Arabic Letters in Alphabetic order,Map of String:order
+  static const Map<String, int> ALPHABETIC_ORDER = {
     ALEF: 1,
     BEH: 2,
     TEH: 3,
@@ -548,7 +556,8 @@ class Arabic {
     YEH_HAMZA: 29,
   };
 
-  static const NAMES = {
+  /// List of Names of Letters and Symbols. Map<String,String>=> String:Name
+  static final NAMES = {
     ALEF: "ألف",
     BEH: "باء",
     TEH: 'تاء',
@@ -586,34 +595,25 @@ class Arabic {
     WAW_HAMZA: 'همزة على الواو',
     ALEF_HAMZA_BELOW: 'همزة تحت الألف',
     YEH_HAMZA: 'همزة على الياء',
-    FATHATAN: 'فتحتان',
-    DAMMATAN: 'ضمتان',
-    KASRATAN: 'كسرتان',
-    FATHA: 'فتحة',
-    DAMMA: 'ضمة',
-    KASRA: 'كسرة',
-    SHADDA: 'شدة',
-    SUKUN: 'سكون',
+    Symbols.FATHATAN: 'فتحتان',
+    Symbols.DAMMATAN: 'ضمتان',
+    Symbols.KASRATAN: 'كسرتان',
+    Symbols.FATHA: 'فتحة',
+    Symbols.DAMMA: 'ضمة',
+    Symbols.KASRA: 'كسرة',
+    Symbols.SHADDA: 'شدة',
+    Symbols.SUKUN: 'سكون',
   };
 
-  static final List<int> DIACRITICS_RANGE = [
-    for (int i = 0x0600; i < 0x06ff; ++i) i
-  ];
-  static final DIACRITICS = DIACRITICS_RANGE.where((element) {
-    final found = UnicodeScript.scripts
-        .where((script) => element >= script.start && element <= script.end);
-    if (found.isEmpty) return false;
-    final script = found.single;
-    return script.category == "Mn";
-  }).map((e) => String.fromCharCode(e));
-
-  static final HARAKAT_PATTERN =
-      RegExp(r'[' + HARAKAT.join() + r']', unicode: true);
-
+  /// [RegExp] to match Liguatures
   static final LIGUATURES_PATTERN =
-      RegExp(r"[" + LIGUATURES.join() + r"]", unicode: true);
+      RegExp(r"[" + LIGATURES.join() + r"]", unicode: true);
+
+  /// [RegExp] to match all Hamaz letters
   static final HAMZAT_PATTERN =
       RegExp(r"[" + HAMZAT.join() + r"]", unicode: true);
+
+  /// [RegExp] to match all Alef letters
   static final ALEFAT_PATTERN =
       RegExp(r"[" + ALEFAT.join() + r"]", unicode: true);
 }
