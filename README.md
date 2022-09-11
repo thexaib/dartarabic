@@ -9,7 +9,34 @@ Parsing Arabic text in Dart
 Import `'package:dartarabic/dartarabic.dart'` and access the static methods in `DartArabic` class, and `Arabic` class.
 
 ## Named Arabic Unicode Letters/Marks
+Get strings of Arabic language characters by accessing `Arabic` class and `Arabic.Symbols`. for example:
+```dart
+print(Arabic.ALEF);
+print(Arabic.BEH);
+print(Arabic.TEH);
+print(Arabic.Symbols.QUESTION);
+print(Arabic.Symbols.SEMICOLON);
+print(Arabic.Symbols.SHADDA);
+```
+Outputs:
+```shell
+ا
+ب
+ت
+؟
+؛
+ّ
 
+```
+ Some helping lists/maps are also provided:
+```dart
+print(Arabic.NAMES);
+```
+Output: 
+```shell
+{ا: ألف, ب: باء, ت: تاء, ة: تاء مربوطة, ث: ثاء, ج: جيم, ح: حاء, خ: خاء, د: دال, ذ: ذال, ر: راء, ز: زاي, س: سين, ش: شين, ص: صاد, ض: ضاد, ط: طاء, ظ: ظاء, ع: عين, غ: غين, ف: فاء, ق: قاف, ك: كاف, ل: لام, م: ميم, ن: نون, ه: هاء, و: واو, ي: ياء, ء: همزة, ـ: تطويل, آ: ألف ممدودة, ى: ألف مقصورة, أ: همزة على الألف, ؤ: همزة على الواو, إ: همزة تحت الألف, ئ: همزة على الياء, ً: فتحتان, ٌ: ضمتان, ٍ: كسرتان, َ: فتحة, ُ: ضمة, ِ: كسرة, ّ: شدة, ْ: سكون}
+```
+See [Api Documentation](https://pub.dev/documentation/dartarabic/latest/) for all available fields.
 ## DartArabic Methods
 - [stripHarakat](#stripharakat)
 - [stripTashkeel](#striptashkeel)

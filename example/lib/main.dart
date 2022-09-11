@@ -68,4 +68,15 @@ void main() async {
   stopwatch.start();
   output = DartArabic.normalizeLetters("ﻫﻞ");
   print("normalizeLetters ${stopwatch.elapsedMilliseconds}ms: $output");
+
+  // Accessing Characters string
+  print(Arabic.ALEF);
+  print(Arabic.BEH);
+  print(Arabic.TEH);
+  print(Arabic.Symbols.QUESTION);
+  print(Arabic.Symbols.SEMICOLON);
+  print(Arabic.Symbols.SHADDA);
+  print(Arabic.NAMES);
+
+
 }
