@@ -1,5 +1,6 @@
 ## CHANGELOG-DEV
 
+- exported ArabicSymbol , to be included in the api documentation
 ## 0.1.0
 - Releasing
 - ADD `Arabic.Symbols.UTHMANI_STOP_SEEN_HIGH`, some documentation added
