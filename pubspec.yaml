@@ -1,6 +1,6 @@
 name: dartarabic
 description: A specific Arabic language library ported to dart from Python, provides basic functions to manipulate Arabic letters and text.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/thexaib/dartarabic
 
 environment:

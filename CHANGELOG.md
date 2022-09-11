@@ -1,5 +1,7 @@
 # Changelog
 
+## 0.1.1
+- docs and showcase added to readme
 ## 0.1.0
 - sound Null-safety 
 - [New] `Arabic.IKHFA_BEFORE_LETTERS`, `Arabic.Symbols.UTHMANI_STOP_SEEN_HIGH`
