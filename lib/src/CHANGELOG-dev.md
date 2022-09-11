@@ -1,3 +1,5 @@
+## CHANGELOG-DEV
+- ADD `Arabic.Symbols.UTHMANI_STOP_SEEN_HIGH`, some documentation added
 - ADDED to ArabicSymbols, the symbols which were part of `dartarabic-0.0.1-nullsafety.1` but was not committed to github
 - [New] `Arabic.IKHFA_BEFORE_LETTERS` list is added. Documentation to `Arabic` classes fields added. still incomplete
 - [Breaking] Marks,Numbers and symbols in `Arabic` class are now should be accessed as `Arabic.Symbols`. 
