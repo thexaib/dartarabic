@@ -1,5 +1,7 @@
 # Changelog
 
+## 0.1.1+1
+- readme.md fixed
 ## 0.1.1
 - docs and showcase added to readme
 ## 0.1.0

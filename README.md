@@ -38,8 +38,8 @@ Output:
 ```
 See [Api Documentation](https://pub.dev/documentation/dartarabic/latest/) for all available fields. 
 ### Showcase
-See all string literals at [DartArabic Showcase](https://thexaib.github.io/apps/dartarabic/)
-![DartArabic Showcase](images/dartarabic_showcase.png)
+See all string literals at [DartArabic Showcase](https://thexaib.github.io/apps/dartarabic-showcase/)
+![DartArabic Showcase](https://raw.githubusercontent.com/thexaib/dartarabic/main/images/dartarabic_showcase.png)
 ## DartArabic Methods
 - [stripHarakat](#stripharakat)
 - [stripTashkeel](#striptashkeel)

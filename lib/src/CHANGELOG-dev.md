@@ -1,5 +1,9 @@
 ## CHANGELOG-DEV
 
+## 0.1.1+1
+- readme.md fixed
+## 0.1.1
+- docs and showcase added to readme
 - exported ArabicSymbol , to be included in the api documentation
 ## 0.1.0
 - Releasing
