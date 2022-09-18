@@ -82,14 +82,45 @@ class ArabicSymbols {
 
   final COMMA = '\u060C';
   final DATE_SEPARATOR = '\u060D';
+
+  /// Poetic verse sign <b>&#1550;</b>
   final SIGN_POETIC_VERSE = '\u060E';
+
+  /// Poetic sign Misra <b>&#1551;</b>
   final SIGN_MISRA = '\u060F';
 
-  ///  Quranic Annotation small Tah &#1558;
+  ///  Honorific Sign Sallallahu Alayhe Wasalm <b>&#1552;</b>
+  final HONORIFIC_SALLALLAHU_TOP_SIGN = '\u0610';
+
+  ///  Honorific Sign Alayhe Assalam <b>&#1553;</b>
+  final HONORIFIC_ALAYHE_SALAM_TOP_SIGN = '\u0611';
+
+  ///  Honorific Sign Rahmatullah Alayhe <b>&#1554;</b>
+  final HONORIFIC_RAHMATULLAH_TOP_SIGN = '\u0612';
+
+  ///  Honorific Sign Radi Allahu Anhu <b>&#1555;</b>
+  final HONORIFIC_RADI_ALLAH_TOP_SIGN = '\u0613';
+
+  ///  Honorific Sign Takhallus <b>&#1556;</b>
+  final HONORIFIC_TAKHALLUS_TOP_SIGN = '\u0614';
+
+  ///  Quranic Annotation small Tah <b>&#1558;</b>
   final QURAN_ANNOTATION_TAH = '\u0615';
 
-  ///  Quranic Annotation small Zain &#1559;
+
+  ///  Quranic Annotation small Zain <code>&#1559;</code>
   final QURAN_ANNOTATION_ZAIN = '\u0617';
+
+  ///  Quranic Annotation small Fatha <code>&#1559;</code>
+  final QURAN_ANNOTATION_SMALL_FATHA = '\u0618';
+
+
+  ///  Quranic Annotation small Damma <code>&#1561;</code>
+  final QURAN_ANNOTATION_SMALL_DAMMA = '\u0619';
+
+  ///  Quranic Annotation small Kasra <code>&#1562;</code>
+  final QURAN_ANNOTATION_SMALL_KASRA = '\u061A';
+
 
   /// Punctuation Three Dots &#1566;
   final TRIPPLE_DOT = '\u061E';
@@ -97,18 +128,29 @@ class ArabicSymbols {
   /// Question Mark &#1567;
   final QUESTION = '\u061F';
 
-  final SEMICOLON = '\u061B';
 
   final FULL_STOP = '\u06d4';
 
   final BYTE_ORDER_MARK = '\ufeff';
 
+  /// same as [Arabic.ALEF_MAKSURA]
   final EMPTY_ALEF = Arabic.ALEF_MAKSURA;
+
+  /// same as [Arabic.ALEF]
   final EMPTY_YEH = Arabic.ALEF;
-  final SPACE = ' ';
+
+  final SPACE = '\u0020';//''' ';
+  /// Format Character Mark <code>&#1564;</code>
+  final FORMAT_CHARACTER_MARK = '\u061c';
+  final FORMAT_CHARACTER_EMPTY_CELL = '\u061d';
+  /// Semicolon <code>&#1563;</code>
+  final SEMICOLON = '\u061B';
+
+  /// AYAH END SIGN <code>&#1757;</code>
+  final SIGN_AYAH_END = '\u06DD';
 
   //stop signs uthmani
-  /// SAD-LAM-ALEF-MAKSURA &#1750;
+  /// SAD-LAM-ALEF-MAKSURA <b> &#1750;</b>
   final UTHMANI_STOP_SAAD_LAM = '\u06d6';
 
   /// QAF-LAM-ALEF-MAKSURA &#1751;
@@ -133,8 +175,6 @@ class ArabicSymbols {
 
 
 
-  /// AYAH END SIGN &#1757;
-  final SIGN_AYAH_END = '\u06DD';
 
   /// STAR OF RUB-EL-HIZEB &#1758;
   final STAR_RUBEL_HIZEB = '\u06DE';
@@ -143,20 +183,28 @@ class ArabicSymbols {
   final SIGN_SAJDAH = '\u06E9';
 
 //   Diacritics                      ;
+  /// Fthatan <b>&#1611;</b>
   final FATHATAN = '\u064b';
 
+  /// Dammatan <b>&#1612;</b>
   final DAMMATAN = '\u064c';
 
+  /// Kasratan <b>&#1613;</b>
   final KASRATAN = '\u064d';
 
+  /// Fatha <b>&#1614;</b>
   final FATHA = '\u064e';
 
+  /// Damma <b>&#1615;</b>
   final DAMMA = '\u064f';
 
+  /// Kasra <b>&#1616;</b>
   final KASRA = '\u0650';
 
+  /// Shadda <b>&#1617;</b>
   final SHADDA = '\u0651';
 
+  /// Sukun <b>&#1618;</b>
   final SUKUN = '\u0652';
   final SUKUN_CURVY = '\u06e1';
   final SUKUN_ROUNDED = '\u06df';

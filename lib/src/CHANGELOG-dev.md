@@ -1,5 +1,7 @@
 ## CHANGELOG-DEV
 
+## 0.1.2
+- new symbols added
 ## 0.1.1+1
 - readme.md fixed
 ## 0.1.1

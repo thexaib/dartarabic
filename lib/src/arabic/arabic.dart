@@ -7,24 +7,28 @@ class Arabic {
   /// Punctuation  Symbols and marks
   static final ArabicSymbols Symbols = ArabicSymbols();
 
-  /// Hamaza letter
+  /// Hamaza <b>&#1569;</b>
   static const HAMZA = '\u0621';
 
-  /// Alef Madda character Normalized Form
+  /// Alef with Madda above Normalized Form <b>&#1570;</b>
   static const ALEF_MADDA = '\u0622';
 
+  /// Alef with Hamza above <b>&#1571;</b>
   static const ALEF_HAMZA_ABOVE = '\u0623';
 
+  /// Waw with Hamza above <b>&#1572;</b>
   static const WAW_HAMZA = '\u0624';
 
+  /// Alef with hamza below <b>&#1573;</b>
   static const ALEF_HAMZA_BELOW = '\u0625';
 
+  /// Yeh with hamza above <b>&#1574;</b>
   static const YEH_HAMZA = '\u0626';
 
-  /// Alef character Normalized Form
+  /// Alef character Normalized Form <b>&#1575;</b>
   static const ALEF = '\u0627';
 
-  /// Beh character Normalized Form
+  /// Beh character Normalized Form <b>&#1576;</b>
   static const BEH = '\u0628';
 
   /// Teh-Marbuta character Normalized Form
