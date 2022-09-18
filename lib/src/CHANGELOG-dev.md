@@ -3,6 +3,8 @@
 dart pub publish --dry-run
 ```
 
+## 0.1.3
+- new symbols added
 ## 0.1.2
 - new symbols added
 ## 0.1.1+1
