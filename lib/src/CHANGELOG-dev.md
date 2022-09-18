@@ -1,4 +1,7 @@
 ## CHANGELOG-DEV
+```shell
+dart pub publish --dry-run
+```
 
 ## 0.1.2
 - new symbols added
