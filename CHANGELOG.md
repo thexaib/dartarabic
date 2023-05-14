@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.0
+- Flutter 3.10.0/Dart 3.0
+
 ## 0.1.3
 - New Characters in `Arabic.Symbols`:
   - `List<string>`: ALL_COMBINING_MARKS

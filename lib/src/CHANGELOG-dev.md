@@ -3,6 +3,8 @@
 dart pub publish --dry-run
 ```
 
+## 0.2.0
+- updated to Flutter 3.10.0/Dart 3.0
 ## 0.1.3
 - new symbols added
 ## 0.1.2
