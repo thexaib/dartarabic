@@ -15,5 +15,7 @@ on:
 jobs:
   publish:
     uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      environment: pub.dev
     # with:
     #   working-directory: path/to/package/within/repository
