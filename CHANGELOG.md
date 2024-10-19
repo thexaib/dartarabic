@@ -1,5 +1,7 @@
 # Changelog
 
+## 0.3.1
+- `characters` dependency `^1.3.1` tp `^1.3.0`
 ## 0.3.0
 - dependencies upgraded. flutter sdk: '>=3.1.4 <4.0.0'
 ## 0.2.0
