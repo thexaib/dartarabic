@@ -7,19 +7,23 @@ class ArOp {
   static const String METHOD_UNIFORM = "uniform";
   static const String METHOD_TASHEEL = "tasheel";
 
-  static bool is_sukun(String arab) => arab.compareTo(Arabic.Symbols.SUKUN) == 0;
+  static bool is_sukun(String arab) =>
+      arab.compareTo(Arabic.Symbols.SUKUN) == 0;
 
-  static bool is_shadda(String arab) => arab.compareTo(Arabic.Symbols.SHADDA) == 0;
+  static bool is_shadda(String arab) =>
+      arab.compareTo(Arabic.Symbols.SHADDA) == 0;
 
   static bool is_tatweel(String arab) => arab.compareTo(Arabic.TATWEEL) == 0;
 
   static bool is_tanwin(String arab) => Arabic.Symbols.TANWIN.contains(arab);
 
-  static bool is_tashkeel(String arab) => Arabic.Symbols.TASHKEEL.contains(arab);
+  static bool is_tashkeel(String arab) =>
+      Arabic.Symbols.TASHKEEL.contains(arab);
 
   static bool is_haraka(String arab) => Arabic.Symbols.HARAKAT.contains(arab);
 
-  static bool is_shortharaka(String arab) => Arabic.Symbols.SHORTHARAKAT.contains(arab);
+  static bool is_shortharaka(String arab) =>
+      Arabic.Symbols.SHORTHARAKAT.contains(arab);
 
   static bool is_ligature(String arab) => Arabic.LIGATURES.contains(arab);
 

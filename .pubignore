@@ -1,2 +1,5 @@
 /images
 /lib/src/CHANGELOG-dev.md
+/.vscode
+/.idea
+/pub_cmds.txt

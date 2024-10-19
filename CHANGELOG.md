@@ -1,5 +1,7 @@
 # Changelog
 
+## 0.3.0
+- dependencies upgraded. flutter sdk: '>=3.1.4 <4.0.0'
 ## 0.2.0
 - Flutter 3.10.0/Dart 3.0
 

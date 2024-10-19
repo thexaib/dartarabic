@@ -2,6 +2,7 @@ import 'operations.dart';
 
 class DartArabic {
   const DartArabic._();
+
   /// Strip Harakat from [text] arabic word except Shadda. The striped marks are : FATHA, DAMMA, KASRA,  FATHATAN, DAMMATAN, KASRATAN,SUKUN Marks,
   static String stripHarakat(String text) => ArOp.strip_harakat(text);
 

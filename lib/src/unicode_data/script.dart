@@ -13,10 +13,9 @@ class Script {
 }
 
 class UnicodeScript {
-
   /// The Script contains the start and end code points in the range for the
   /// script as well as the name (aka script property value) and category. The
-  /// category meanings can be found here: 
+  /// category meanings can be found here:
   /// http://www.unicode.org/reports/tr44/#General_Category_Values
   static final List<Script> scripts = [
     Script(0x0000, 0x001F, 'Common', 'Cc'),

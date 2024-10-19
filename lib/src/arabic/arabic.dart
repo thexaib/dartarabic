@@ -135,7 +135,6 @@ class Arabic {
   /// Elongation character, same as [TATWEEL]
   static const KASHIDA = TATWEEL;
 
-
   //Letter variants
   static const ALEF_ISOLATED = '\uFE8D';
   static const ALEF_END = '\uFE8E';
@@ -270,19 +269,23 @@ class Arabic {
 
   /// Character Teh Marbuta Isolated Form
   static const TEH_MARBUTA_ISOLATED = '\uFE93';
+
   /// Character Teh Marbuta End Form
   static const TEH_MARBUTA_END = '\uFE94';
 
   /// Character Alef Maksura Isolated Form
   static const ALEF_MAKSURA_ISOLATED = '\uFEEF';
+
   /// Character Alef Maksura End form
   static const ALEF_MAKSURA_END = '\uFEF0';
 
   //other variations
   /// Character Meem Indo-Pak Variant
   static const KAF_INDOPAK = '\u06a9';
+
   /// Character Meem Low
   static const MEEM_LOW = '\u06ed';
+
   /// Character Meem High
   static const MEEM_HIGH = '\u06e2';
 
